@@ -44,3 +44,5 @@ const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 document.querySelector("#date").textContent = fulldate;
+
+let quantity = document.querySelector('#q').value;
