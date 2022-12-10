@@ -1,5 +1,6 @@
 // Select the HTML element to manipulate
-const date1 = document.querySelector("#date");
+const date1 = document.querySelector("#date1");
+const message = document.querySelector("#emessage");
 
 // Try to complete the method with options
 try {
@@ -11,7 +12,7 @@ try {
 	};
 	date1.innerHTML = `Today is <span class="highlight">${new Date().toLocaleDateString("en-UK", options)}</span>!`;
 } catch (e) {
-	document("Error with code or your browser does not support Locale");
+	console.log("Error with code or your browser does not support Locale");
 }
 
 // Long hand method ... building day and month names from built-in date methods.
@@ -43,6 +44,4 @@ const dayName = daynames[d.getDay()];
 const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-document.querySelector("#date").textContent = fulldate;
-
-let quantity = document.querySelector('#q').value;
+document.querySelector("#date2").textContent = fulldate;
