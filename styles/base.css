@@ -27,7 +27,7 @@ header{
 header h1 {
   margin: 0;
 }
-
+main{padding: 1rem;}
 main h2 {
   font-weight: 400;
   border-bottom: dashed 2px deeppink;
