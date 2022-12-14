@@ -37,10 +37,10 @@ html {
 body {
 	display: flex;
 
-	box-align: center;
+	
 	justify-content: center;
 
-	box-pack: center;
+
 	align-items: center;
 
 	height: inherit;
