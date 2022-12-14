@@ -35,9 +35,6 @@ html {
 }
 
 body {
-	display: -webkit-box;
-	display: -moz-box;
-	display: box;
 	display: flex;
 
 	box-align: center;
@@ -96,6 +93,7 @@ form div input {
 
 form div select {
 	width: 50%;
+	padding: 1rem;
 }
 
 form div option {
