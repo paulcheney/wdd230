@@ -1,10 +1,12 @@
-var htmlElem = document.querySelector('html');
-var pElem = document.querySelector('p');
-var imgElem = document.querySelector('img');
+const htmlElem = document.querySelector('html');
+const pElem = document.querySelector('p');
+const imgElem = document.querySelector('img');
 
-var bgcolorForm = document.getElementById('bgcolor');
-var fontForm = document.getElementById('font');
-var imageForm = document.getElementById('image');
+const bgcolorForm = document.querySelector('#bgcolor');
+const fontForm = document.querySelector('#font');
+const imageHeightForm = document.querySelector('#imageHeight');
+
+const lastVisitDate = document.querySelector('#lastVisit')
 
 if(!localStorage.getItem('bgcolor')) {
   populateStorage();
@@ -13,27 +15,31 @@ if(!localStorage.getItem('bgcolor')) {
 }
 
 function populateStorage() {
-  localStorage.setItem('bgcolor', document.getElementById('bgcolor').value);
-  localStorage.setItem('font', document.getElementById('font').value);
-  localStorage.setItem('image', document.getElementById('image').value);
-
+  localStorage.setItem('bgcolor', bgcolorForm.value);
+  localStorage.setItem('font', fontForm.value);
+  localStorage.setItem('imageHeight', imageHeight.value);
+  localStorage.setItem('lastVisitDate', new Date());
   setStyles();
 }
 
 function setStyles() {
-  var currentColor = localStorage.getItem('bgcolor');
-  var currentFont = localStorage.getItem('font');
-  var currentImage = localStorage.getItem('image');
+  const currentColor = localStorage.getItem('bgcolor');
+  const currentFont = localStorage.getItem('font');
+  const imageHeight = localStorage.getItem('imageHeight');
+  const lastVisit = localStorage.getItem('lastVisitDate');
 
-  document.getElementById('bgcolor').value = currentColor;
-  document.getElementById('font').value = currentFont;
-  document.getElementById('image').value = currentImage;
+  bgcolorForm.value = currentColor;
+  fontForm.value = currentFont;
+  imageHeightForm.value = imageHeight;
 
   htmlElem.style.backgroundColor = '#' + currentColor;
   pElem.style.fontFamily = currentFont;
-  imgElem.setAttribute('src', currentImage);
+  imgElem.setAttribute('src', `https://placekitten.com/200/${imageHeight}`);
+  lastVisitDate.textContent = lastVisit;
 }
 
-bgcolorForm.onchange = populateStorage;
-fontForm.onchange = populateStorage;
-imageForm.onchange = populateStorage;
+bgcolorForm.addEventListener('change', populateStorage);
+fontForm.addEventListener('change', populateStorage);
+imageHeightForm.addEventListener('change', populateStorage);
+
+
