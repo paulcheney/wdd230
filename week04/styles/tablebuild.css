@@ -1,0 +1,29 @@
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table thead:first-child {
+  background-color: deeppink;
+  color: white;
+}
+table thead tr:last-child{background-color: #333;}
+table thead tr:last-child th:first-child{background-color: #000;}
+table th{padding: 1rem 0;}
+
+table tbody tr:nth-child(even) {
+  background-color: #ddd;
+}
+table td {
+  color: blueviolet;
+  padding: .5rem 0; 
+  border: 1px solid #bbb; 
+  text-align: center;
+}
+caption{
+  text-align: center;
+  caption-side: bottom;
+  font-size: .7rem;
+  color: #888;
+}
