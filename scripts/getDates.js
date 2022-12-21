@@ -35,3 +35,23 @@ if (numVisits == null) {
   localStorage.setItem("visits", numVisits);
   visitFeedback.innerHTML = `You have been here ${numVisits} times &#x1F440;`
 }
+
+//Form Validation
+const rateDisplay = document.querySelector('#rating');
+const rateSlider = document.querySelector('input[type=range]');
+function displayRating() {
+  rateDisplay.innerHTML = rateSlider.value;
+}
+rateSlider.addEventListener('input', displayRating)
+
+const password1 = document.querySelector('input[name=pass1]')
+const password2 = document.querySelector('input[name=pass2]')
+const matchMessage = document.querySelector('#feedback')
+password2.addEventListener("focusout", matchCheck);
+function matchCheck() {
+  if (password1.value !== password2.value) {
+    matchMessage.textContent = "Your so stupid"
+    password2.value = "";
+    password1.focus();
+  }
+}

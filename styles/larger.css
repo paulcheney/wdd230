@@ -12,4 +12,10 @@ div.allcards {
   grid-row: 1 / span 2;
 }
 
+#formStuff {
+  display: flex;
+  
+}
+
+
 } // end media query

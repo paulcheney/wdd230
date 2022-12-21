@@ -1,3 +1,7 @@
+:root {
+  --accentColor: deeppink;
+}
+
 body {
   font-family: 'Mali', cursive;
   font-weight: 200;
@@ -117,6 +121,46 @@ button#mode.dark {
 .card p {
   margin: 1rem 2%;
 }
+
+/*Form*/
+form {}
+form label{
+  display: block;
+  padding: .5rem;
+}
+form input{
+  display: block;
+  border: 1px solid #aaa;
+  border-left-width: 6px;
+}
+
+input:required:invalid {
+  border-left-color: red;
+}
+input:required:valid {
+  border-left-color: green;
+}
+
+
+
+
+#formStuff {
+  background-color: #aaa;
+}
+#formStuff table {
+  width: 100%;
+  padding: 1rem;
+}
+#formStuff th {
+  background-color: var(--accentColor);
+  padding: .5rem
+
+}
+
+
+
+
+
 
 footer {
   background-color: black;
