@@ -44,14 +44,46 @@ function displayRating() {
 }
 rateSlider.addEventListener('input', displayRating)
 
-const password1 = document.querySelector('input[name=pass1]')
-const password2 = document.querySelector('input[name=pass2]')
+const user1 = document.querySelector('input[name=pass1]')
+const user2 = document.querySelector('input[name=pass2]')
 const matchMessage = document.querySelector('#feedback')
-password2.addEventListener("focusout", matchCheck);
+user2.addEventListener("focusout", matchCheck);
 function matchCheck() {
-  if (password1.value !== password2.value) {
-    matchMessage.textContent = "Your so stupid"
-    password2.value = "";
-    password1.focus();
+  if (user1.value !== user2.value) {
+    matchMessage.textContent = "Usernames DO NOT MATCH"
+    user2.value = "";
+    user1.focus();
   }
+}// end function
+
+const myBtn = document.querySelector('form button')
+const myFormResults = document.querySelector('.results tbody')
+const myForm = document.querySelector('form')
+
+//stops the natural for submission and subsequent page refresh
+document.querySelector("form").addEventListener("submit", function(e){
+  e.preventDefault()
+});
+
+myBtn.addEventListener('click', () => {
+  myFormResults.textContent = "";
+  const myName = document.querySelector('input[name=fname]')
+  addLines('Name:', myName.value)
+  const myEmail = document.querySelector('input[name=email]')
+  addLines('Email:', myEmail.value)
+  const myRange = document.querySelector('input[type=range]')
+  addLines('Rating:', myRange.value)
+  const myUser = document.querySelector('input[name=pass1]')
+  addLines('Username:', myUser.value)
+})
+function addLines(f,v) {
+  const newCell1 = document.createElement('td') 
+  newCell1.textContent = f
+  const newCell2 =document.createElement('td')
+  newCell2.textContent = v
+  const newrow = document.createElement('tr')
+  newrow.appendChild(newCell1)
+  newrow.appendChild(newCell2)
+  myFormResults.appendChild(newrow)
 }
+

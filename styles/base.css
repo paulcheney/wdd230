@@ -1,5 +1,7 @@
 :root {
-  --accentColor: deeppink;
+  --baseColor: #111;
+  --accent-color: deeppink;
+  --box-space: .5rem 16px;
 }
 
 body {
@@ -36,10 +38,10 @@ nav li.menu-item a {
   padding: .75rem 2rem;
   text-align: right;
   font-weight: 400;
-  border-top: dashed 1px deeppink; 
+  border-top: dashed 1px var(--accent-color); 
 }
 nav li.menu-item  a:hover {
-  background-color: deeppink;
+  background-color: var(--accent-color);
 }
 
 nav ul li.menu-item {display: none;}
@@ -54,8 +56,8 @@ header{
   display: flex;
   align-items: center;
   gap: 1rem;
-  background-color: black;
-  color: deeppink;
+  background-color: var( --baseColor);
+  color: var(--accent-color);
   padding: 1rem;
 }
 header h1 {
@@ -84,7 +86,7 @@ main h2 {
   display: flex;
   justify-content: space-between;
   font-weight: 400;
-  border-bottom: dashed 2px deeppink;
+  border-bottom: dashed 2px var(--accent-color);
 }
 main h2 button {font-size: .6rem;}
 
@@ -94,7 +96,7 @@ main.dark h2 {color: #FFF;}
 button#mode {
   background-color: black;
   color: white;
-  border: solid 1px deeppink;
+  border: solid 1px var(--accent-color);
   border-radius: 10px;
 }
 button#mode.dark {
@@ -112,7 +114,7 @@ button#mode.dark {
   background-color: white;
 }
 .card h3 {
-  background-color: deeppink;
+  background-color: var(--accent-color);
   margin: 0;
   padding: 1rem;
   border-top-left-radius: 10px;
@@ -123,10 +125,13 @@ button#mode.dark {
 }
 
 /*Form*/
-form {}
+#formStuff {
+  background-color: #ccc;
+}
+
 form label{
   display: block;
-  padding: .5rem;
+  margin: var(--box-space);
 }
 form input{
   display: block;
@@ -140,30 +145,49 @@ input:required:invalid {
 input:required:valid {
   border-left-color: green;
 }
-
-
-
-
-#formStuff {
-  background-color: #aaa;
+form button {
+  margin: var(--box-space);
 }
+#feedback {
+  background-color: crimson;
+  color: white;
+  line-height: 200%;
+  text-align: center;
+  margin: var(--box-space);
+  width:auto;
+}
+
+
+
+
 #formStuff table {
-  width: 100%;
+  width: 80%;
   padding: 1rem;
+  border-collapse: collapse;
+  margin: var(--box-space);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
+#formStuff table caption {
+  padding: var(--box-space);
+  background-color: black;
+  color: white;
+}
+
 #formStuff th {
-  background-color: var(--accentColor);
+  background-color: var(--accent-color);
   padding: .5rem
-
 }
-
+#formStuff td { padding: .5rem;}
+#formStuff tbody tr td:first-child {
+  text-align: right;
+}
 
 
 
 
 
 footer {
-  background-color: black;
+  background-color: var( --baseColor);
   text-align: center;
   margin-top: 1rem;
   padding: .5rem;

@@ -14,8 +14,7 @@ div.allcards {
 
 #formStuff {
   display: flex;
-  
 }
-
+#formStuff section {flex: 1;}
 
 } // end media query
