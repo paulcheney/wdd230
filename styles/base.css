@@ -182,7 +182,11 @@ form button {
   text-align: right;
 }
 
-
+video::cue {
+  background-image: linear-gradient(to bottom, #aaa, #bbb);
+  font-size: .8rem;
+  color: deeppink;
+}
 
 
 
