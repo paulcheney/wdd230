@@ -183,9 +183,10 @@ form button {
 }
 
 video::cue {
-  background-image: linear-gradient(to bottom, #aaa, #bbb);
-  font-size: .8rem;
+  background: none;
+  font-size: 1rem;
   color: deeppink;
+  text-shadow: 0 0 10px rgba(128,128,128,0.5);
 }
 
 
