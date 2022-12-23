@@ -9,8 +9,14 @@
 <body>
   <h1>Handbrake Embed Test (5:15 minute video)</h1>
   <video controls width="1280" height="720">
-    <source src="media/test-720h-15f-64k.mp4"
+    <source src="media/lazyload1a-720h-15f-64k.mp4"
             type="video/mp4">
+            <track
+    label="English"
+    kind="subtitles"
+    srclang="en"
+    src="media/lazyload1a.vtt"
+    default />
     </video>
     <h2>Initial Page Load before playing</h2>
     <p>1 requests | 0.000596 MB Transferred | 0.000660 MB resources</p>
