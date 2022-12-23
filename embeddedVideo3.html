@@ -6,6 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Handbrake Embed Test</title>
+  <style>
+    video::cue {
+  background: none;
+  font-size: 1rem;
+  color: deeppink;
+  text-shadow: 0 0 10px rgba(128,128,128,0.5);
+}
+  </style>
 </head>
 
 <body>
@@ -17,7 +25,7 @@
     <track label="Spanish" kind="subtitles" srclang="en" src="media/lazyload1a-es.vtt" default />
   </video>
   <h2>Initial Page Load before playing</h2>
-  <p>1 requests | 0.0042 MB Transferred | 0.0098 MB resources</p>
+  <p>2 requests | 0.0042 MB Transferred | 0.0098 MB resources</p>
   <h2>Total Page Load After playing</h2>
   <p>4 requests | 14.9 MB Transferred | 14.9 MB resources</p>
 </body>

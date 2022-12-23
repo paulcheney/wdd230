@@ -182,12 +182,6 @@ form button {
   text-align: right;
 }
 
-video::cue {
-  background: none;
-  font-size: 1rem;
-  color: deeppink;
-  text-shadow: 0 0 10px rgba(128,128,128,0.5);
-}
 
 
 
