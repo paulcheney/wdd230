@@ -23,8 +23,8 @@ const displayProphets = (prophets) => {
     myImg.setAttribute('src', prophet.imageurl);
     myImg.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
     myImg.setAttribute('loading', 'lazy');
-    myImg.setAttribute('width', '400');
-    myImg.setAttribute('height', '400');
+    myImg.setAttribute('width', '340');
+    myImg.setAttribute('height', '440');
 
     mySection.appendChild(myh2)
     mySection.appendChild(day)
