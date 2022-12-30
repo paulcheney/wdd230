@@ -1,0 +1,153 @@
+*{box-sizing: border-box;}
+body {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+header {
+  padding: .5rem;
+  border-bottom: 1px solid #f5a434;
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: 50px auto 48px;
+}
+
+header h1 {
+  margin: 0;
+  color: #015f72;
+  font-size: 1.5rem;
+}
+
+header p {
+  margin: 0;
+  color: #015f72;
+  font-size: .87rem;
+}
+
+
+/*Navagation goes here*/
+#menu-button {
+  background: none;
+  border: none;
+  color: #015f72;
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 5px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  list-style-type: none;
+  z-index: 99;
+}
+
+nav ul.open {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 150px;
+  background-color: #f5a434;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: .75rem;
+}
+nav ul li.active a {
+  font-weight: 600;
+}
+nav ul li:hover a {
+  background-color: #015f72;
+  color: white;
+}
+/*Default Styling*/
+main h1 {
+  color:#015f72;
+  margin-left: 2vw;
+}
+main h2 {
+  color:#015f72;
+  margin-left: 2vw;
+}
+main p {
+  color:#333;
+  margin-left: 2vw;
+}
+
+
+/*Hero goes here*/
+div.hero {
+  width: 100%;
+  position: relative;
+}
+div.hero img {width: 100%;}
+div.hero a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: .5rem 1rem;
+  background-color: #f5a434;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+div.hero a:hover {font-size: 150%;}
+
+/* Cards go Here */
+div.cards{
+  display: grid; 
+  grid-template-columns: 1fr;
+  padding: 1rem 2vw;
+}
+div.cards section {
+  border: 1px dashed #aaa;
+  width: 100%;
+  padding: 1rem 2vw;
+}
+div.cards section h2 {margin-top: 0;}
+
+/*Discover goes here*/
+section.gallery figure {
+  margin: 1rem 2vw;
+}
+section.gallery figcaption {
+  text-align: center;
+  color: #666;
+  font-weight: 600;;
+}
+section.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+/*Footer goes here*/
+footer {
+  background-color: #ddd;
+}
+footer section {padding: 1rem 2vw;}
+footer p {margin: .1rem 0;}
+footer a {color:#015f72;}
+footer section:nth-child(1) {
+  display: grid;
+  grid-template-columns: 60px auto;
+}
