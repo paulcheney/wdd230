@@ -1,0 +1,87 @@
+@media only screen and (min-width: 38rem) {
+
+  /*Limit the overall page */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /*Navagation goes here*/
+  header {
+    grid-template-columns: 50px auto auto;
+  }
+
+  nav {
+    justify-self: end;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav ul,
+  nav ul.open {
+    /*remove defaults from small*/
+    position: initial;
+    width: auto;
+    background-color: unset;
+    /*new*/
+    display: flex;
+  }
+
+
+  nav ul li a:hover {
+    background-color: unset;
+    color: #666;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #f5a434;
+  }
+
+  div.hero a {
+    top: 20%;
+    left: 15%;
+  }
+
+  div.cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  section.events {
+    grid-column: 1 / span 2;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer section:nth-child(3) {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+
+  /*Discover goes here*/
+  div.discover {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  section.gallery figure {max-width: 600px;}
+  section.gallery img:hover {
+    box-shadow: 0 0 10px #333;
+    border-radius: 12px;
+  }
+
+
+  /*Discover goes here*/
+  div.join {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+
+}/*end media query*/
