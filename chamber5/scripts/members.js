@@ -26,15 +26,19 @@ const displayMembers = (allMembers) => {
     switch(member.level) {
       case 1:
         myLevel.src = "./images/level-bronze.png"
+        myLevel.alt="Bronze"
         break;
       case 2:
         myLevel.src = "./images/level-silver.png"
+        myLevel.alt="Silver"
         break;
         case 3:
           myLevel.src = "./images/level-gold.png"
+          myLevel.alt="Gold"
         break;
       default:
         myLevel.src = "./images/level-nfp.png"
+        myLevel.alt="Npt for Profit"
     }
     const mySection = document.createElement('section')
     mySection.appendChild(myLogo)
