@@ -54,8 +54,12 @@ const displayMembers = (allMembers) => {
 const setGrid = document.querySelector('#btnGrid')
 const setList = document.querySelector('#btnList')
 setGrid.addEventListener('click',() => {
-  cards.className=('grid')
+  setGrid.className="active"
+  setList.className=""
+  cards.className='grid'
 })
 setList.addEventListener('click',() => {
-  cards.className=('list')
+  setList.className="active"
+  setGrid.className=""
+  cards.className='list'
 })

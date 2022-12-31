@@ -167,6 +167,7 @@ form input[type='submit'] {
 
 /*Members goes here*/
 div#theButtons {width: 100%; text-align: center;}
+div#theButtons button.active {background-color: #f5a434;}
 div#theButtons button {
   margin: 0 1rem; 
   padding: .7rem 1rem;
