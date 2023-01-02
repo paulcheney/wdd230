@@ -135,17 +135,24 @@ div.cards section {
   padding: 1rem 0;
 }
 div.cards section h2 {margin-top: 0;}
+
 /*spotlight cards*/
 div.cards .spot {
   text-align: center;
-  padding-top: 0;
+  padding: 0;
 }
-.spot img {width: 100%;}
+.spot img {width: 100%; display: block;}
 .spot span {
   background-color: #f5a434;
   display: block;
   padding: .5rem 8px;
   font-weight: 600;
+}
+.spot a {
+  display: block;
+  padding: .75rem 1rem;
+  color: #015f72;
+  background-color: #eee;
 }
 
 /*Banner goes here*/

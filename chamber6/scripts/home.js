@@ -34,7 +34,7 @@ async function getMembers() {
   const response = await fetch(url);
   const data = await response.json();
   const allMembers = data.members
-  console.log(allMembers)
+  //console.log(allMembers)
   const specialMembers = data.members.filter(x => x.level > 1);
   displayMembers(specialMembers)
 }
@@ -58,7 +58,7 @@ const displayMembers = (spotList) => {
 
 const spotCards = document.querySelector('#cards')
 function displaySpot(x) {
-  console.log(x)
+  //console.log(x)
   const mySpot = document.createElement('section')
   mySpot.className = "spot"
   const myHeader = document.createElement('span')
@@ -69,7 +69,7 @@ function displaySpot(x) {
   myLogo.src=`images/${x.logopath}`
   myLogo.alt="x.name"
   const myURL = document.createElement('a')
-  myURL.textContent="Website"
+  myURL.textContent="Visit Sponsor"
   myURL.href=x.url
   myURL.target="_blank"
 
@@ -83,7 +83,7 @@ function displaySpot(x) {
 
 //banner
 const today = new Date()
-console.log(today.getDay())
+//console.log(today.getDay())
 if (today.getDay()>4) {
 document.querySelector('#banner').className = "hide"
 }
