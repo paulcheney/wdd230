@@ -73,19 +73,19 @@ nav ul li:hover a {
 /*Default Styling*/
 main h1 {
   color:#015f72;
-  margin-left: 2vw;
+  margin: 2vw;
 }
 main h2 {
   color:#015f72;
-  margin-left: 2vw;
+  margin: .5rem 2vw;
 }
 main h3 {
   color:#333;
-  margin-left: 2vw;
+  margin: .5rem 2vw;
 }
 main p {
   color:#333;
-  margin-left: 2vw;
+  margin: .5rem 2vw;
 }
 
 
@@ -111,6 +111,18 @@ div.hero a {
 }
 div.hero a:hover {font-size: 150%;}
 
+/*Weather goes here*/
+p#forecast {
+  display: flex;
+  justify-content: space-between;
+}
+p#forecast span {
+  border: 1px solid #f5a434;
+  padding: 1rem
+  
+}
+
+
 /* Cards go Here */
 div.cards{
   display: grid; 
@@ -120,9 +132,32 @@ div.cards{
 div.cards section {
   border: 1px dashed #aaa;
   width: 100%;
-  padding: 1rem 2vw;
+  padding: 1rem 0;
 }
 div.cards section h2 {margin-top: 0;}
+/*spotlight cards*/
+div.cards .spot {
+  text-align: center;
+  padding-top: 0;
+}
+.spot img {width: 100%;}
+.spot span {
+  background-color: #f5a434;
+  display: block;
+  padding: .5rem 8px;
+  font-weight: 600;
+}
+
+/*Banner goes here*/
+div#banner {
+  background-color: #f5a434;
+  padding: 1rem 2vw;
+  text-align: center;
+  font-weight: 600;
+}
+div#banner.hide {
+  display: none;
+}
 
 /*Discover goes here*/
 section.gallery figure {

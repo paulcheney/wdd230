@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber of Commerce Week 2">
+  <meta name="author" content="Paul Cheney">
+
+  <meta property="og:title" content="WDD 230 - Chamber - Paul Cheney">
+  <meta property="og:url" content="https://paulcheney.github.io/wdd230/">
+  <meta property="og:description" content="Week 2 WDD230">
+  <meta property="og:image" content="https://paulcheney.github.io/wdd230/images/logo.png">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <title>Chamber of Commerce Week 2</title>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo1x.png" alt="Site Logo">
+    <div>
+      <h1>Bedford Falls</h1>
+      <p>Chamber of Commerce</p>
+    </div>
+    <nav>
+      <button id="menu-button">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="active"><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+    <div class="join">
+      <section>
+        <h2>Become a Member</h2>
+        <form action="thankyou.html" method="get">
+          <label>Your Title <input type="text" name="title" pattern="[A-Za-z -]{7,}" title="seven or more"></label>
+          <label>First Name* <input type="text" name="fname" required></label>
+          <label>Last Name* <input type="text" name="lname" required></label>
+          <label>Email* <input type="text" name="email" placeholder="tom@mail.com" required></label>
+          <label>Cell Number* <input type="tel" name="phone"  required></label>
+          <label>Business Name* <input type="text" name="busname" required></label>
+          
+          <fieldset>
+            <legend>Membership Level</legend>
+            <label><input type="radio" name="level" value="not-for-profit"> NP Membership</label>
+            <label><input type="radio" name="level" value="Bronze Membership"> Bronze Membership</label>
+            <label><input type="radio" name="level" value="Silver Membership"> Silver Membership</label>
+            <label><input type="radio" name="level" value="Gold Membership"> Gold Membership</label>
+          </fieldset>
+    <label>Business Description<textarea name="description"></textarea></label>
+    <input name="today" value="xxx" type="hidden">
+    
+    
+          <input type="submit" value="Apply">
+        </form>
+      </section>
+      <section>
+        <h2>Membership Level Details</h2>
+        <h3>NP Membership</h3>
+        <ul>
+          <li>Vote at Meetings</li>
+        </ul>
+        <p>$00</p>
+        <h3>Bronze Membership</h3>
+        <ul>
+          <li>Vote at Meetings</li>
+          <li>Ride in the Parade</li>
+        </ul>
+        <p>$100</p>
+        <h3>Silver Membership</h3>
+        <ul>
+          <li>Vote at Meetings</li>
+          <li>Ride in the Parade</li>
+          <li>Promotion on home page</li>
+        </ul>
+        <p>$200</p>
+        <h3>Gold Membership</h3>
+        <ul>
+          <li>Vote at Meetings</li>
+          <li>Ride in the Parade</li>
+          <li>Promotion on home page</li>
+          <li>Run for President</li>
+        </ul>
+        <p>$300</p>
+      </section>
+    </div>
+
+  </main>
+  <footer>
+    <section>
+      <img src="images/logo1x.png" alt="Site Logo">
+      <div>
+        <p>Bedford Falls Chamber of Commerce</p>
+        <p>1203 North Aspen Drive</p>
+        <p>Someplace, MN 19476</p>
+      </div>
+    </section>
+    <section>
+      <p>info@bedfordfalls.org</p>
+      <p><a href="tel:18005551234">1-800-555-1234</a></p>
+      <p>Find us on <a href="#">Google Maps</a></p>
+    </section>
+    <section>
+      <p>&copy;2023 Bedford Falls Chamber</p>
+      <p>Paul Cheney</p>
+      <p>WDD 230 Class Project</p>
+      <p id="lastModified">placeholder</p>
+    </section>
+  </footer>
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/form.js"></script>
+</body>
+
+</html>
