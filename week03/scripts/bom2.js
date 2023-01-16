@@ -1,7 +1,7 @@
 //Get all the HTML element references
 const myinput = document.querySelector('input');
 const mybutton = document.querySelector('button');
-const mylist = document.querySelector('.input');
+const mylist = document.querySelector('#listcontainer');
 
 // if the result of getting the chapter list is 'null' then an empty array is assigned to chaptersArray
 let chaptersArray = getChapterList() || [];
