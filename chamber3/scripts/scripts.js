@@ -10,15 +10,19 @@ menubutton.addEventListener("click", () => {
 });
 
 
-// visit count
-const visitFeedback = document.querySelector('#visitCount');
-let numVisits = localStorage.getItem("visits")
-console.log(numVisits)
-if (numVisits == null) {
-  visitFeedback.textContent = "You're a first timer"
-  localStorage.setItem("visits", 1);
-} else {
-  numVisits++;
-  localStorage.setItem("visits", numVisits);
-  visitFeedback.innerHTML = `You have been here ${numVisits} times &#x1F440;`
-}
+// Time between visits
+const now = Date.now();
+const msInDay = 1000 * 60 * 60 * 24;
+let message = "Looks like your first visit"
+const storedDate = localStorage.getItem('lastVisitTime')
+if (storedDate != null) {
+  const difference = (now - storedDate)/msInDay;
+  //console.log(difference)
+  if (difference>1) {
+    message = `It has been ${Math.floor(difference)} days since your last visit`
+  } else {
+    message = `I see you were here earlier today`
+  }
+} 
+localStorage.setItem('lastVisitTime', now)
+document.querySelector('#visitCount').textContent = message;
