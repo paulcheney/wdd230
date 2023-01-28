@@ -134,7 +134,11 @@ section.gallery img {
   height: auto;
   border-radius: 4px;
 }
+section.gallerybroke img {
 
+ 
+  border-radius: 4px;
+}
 
 
 
