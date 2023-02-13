@@ -112,15 +112,24 @@ div.hero a {
 div.hero a:hover {font-size: 150%;}
 
 /*Weather goes here*/
-p#forecast {
+.current {
+  font-size: 1.2rem;
+  color: #f5a434
+}
+#forecast {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
 }
-p#forecast span {
+
+#forecast div {
   border: 1px solid #f5a434;
   padding: 1rem
-  
 }
+
+#forecast p.temp {font-size: 2rem;}
+#forecast p.desc {color: #f5a434}
 
 
 /* Cards go Here */

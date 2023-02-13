@@ -55,10 +55,10 @@
         <p>Dynamically aggregate superior processes without next-generation ideas. Progressively deploy multimedia.</p>
       </section>
       <section class="weather">
-        <h2>Weather</h2>
-        <p>Now: <span id="temp">x</span> with <span id="desc">x</span></p>
+        <h2>Weather for <span id="town"></span></h2>
+        <p class="current">Now: <span id="temp">x</span> with <span id="desc">x</span></p>
         <h3>Three day Forecast</h3>
-        <p id="forecast"></p>
+        <div id="forecast"></div>
       </section>
 
     </div><!-- end cards -->
@@ -84,8 +84,11 @@
       <p id="lastModified">placeholder</p>
     </section>
   </footer>
-  <script src="scripts/scripts.js"></script>
-  <script src="scripts/home.js"></script>
+  <script src="scripts/common.js"></script>
+  <script src="scripts/banner.js"></script>
+  <script src="scripts/weatherCurrent.js"></script>
+  <script src="scripts/weatherforecast.js"></script>
+  <script src="scripts/spotlight.js"></script>
 </body>
 
 </html>
