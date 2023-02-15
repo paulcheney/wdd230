@@ -1,290 +1,291 @@
-WEBVTT
+WEBVTT - Portuguese
+
+WEBVTT - Inglês
 
 1
 00:00:00.900 --> 00:00:06.060
-now let's work on the HTML for our hero
+Agora vamos trabalhar no HTML do nosso herói
 
 2
 00:00:04.020 --> 00:00:07.560
-image I'm going to lead off with a
+imagem. Eu vou começar com um
 
 3
 00:00:06.060 --> 00:00:11.940
-division
+divisão.
 
 4
 00:00:07.560 --> 00:00:13.620
-this division is going to have a class
+Essa divisão vai ter uma aula
 
 5
 00:00:11.940 --> 00:00:16.920
-and I'm just going to make up the word
+e eu só vou inventar a palavra
 
 6
 00:00:13.620 --> 00:00:18.960
-hero because it seems appropriate
+'herói' porque parece apropriado.
 
 7
 00:00:16.920 --> 00:00:21.960
-inside that we're going to have a
+Dentro disso, teremos um
 
 8
 00:00:18.960 --> 00:00:25.500
-picture set tag
+etiqueta de imagem.
 
 9
 00:00:21.960 --> 00:00:28.080
-the picture tag is going to begin
+A etiqueta da imagem vai começar
 
 10
 00:00:25.500 --> 00:00:31.560
-with a source
+com uma fonte.
 
 11
 00:00:28.080 --> 00:00:33.239
-the source is going to have a source set
+A fonte terá um conjunto de fontes
 
 12
 00:00:31.560 --> 00:00:35.520
-attribute
+atributo.
 
 13
 00:00:33.239 --> 00:00:38.940
-and I'll fill that in in a second it
+Vou preencher isso em um segundo. Isto
 
 14
 00:00:35.520 --> 00:00:41.660
-also has a media query
+também tem uma consulta de mídia.
 
 15
 00:00:38.940 --> 00:00:44.280
-and inside here we're going to use a Max
+Aqui dentro vamos usar um
 
 16
 00:00:41.660 --> 00:00:46.200
-Dash width
+largura máxima.
 
 17
 00:00:44.280 --> 00:00:48.539
-the width we'll use for this First
+A largura que usaremos para este primeiro
 
 18
 00:00:46.200 --> 00:00:51.120
-Source is the width of our smallest
+fonte é a largura do nosso menor
 
 19
 00:00:48.539 --> 00:00:53.660
-image which you'll feel remember is 500
+imagem que você vai se lembrar é
 
 20
 00:00:51.120 --> 00:00:53.660
-pixels
+500 pixels.
 
 21
 00:00:55.140 --> 00:01:00.539
-the Second Source is just like the first
+A segunda fonte é exatamente como a primeira
 
 22
 00:00:57.960 --> 00:01:04.739
-one except that the media query now
+um, exceto que a consulta de mídia agora
 
 23
 00:01:00.539 --> 00:01:07.100
-matches the medium image width
+corresponde à largura média da imagem.
 
 24
 00:01:04.739 --> 00:01:09.180
-and then we're ready for a standard
+Agora estamos prontos para um padrão
 
 25
 00:01:07.100 --> 00:01:12.740
-image tag
+marca de imagem.
 
 26
 00:01:09.180 --> 00:01:12.740
-images have sources
+As imagens têm fontes.
 
 27
 00:01:12.960 --> 00:01:17.520
-in this particular source is the large
+Neste caso particular, a fonte é
 
 28
 00:01:15.960 --> 00:01:20.400
-one
+a imagem grande.
 
 29
 00:01:17.520 --> 00:01:21.720
-it has an alt and I'll just call this
+Tem um alt e vou chamar isso
 
 30
 00:01:20.400 --> 00:01:24.240
-hero
+herói.
 
 31
 00:01:21.720 --> 00:01:26.159
-and then we're going to have a width
+Então nós vamos ter uma largura
 
 32
 00:01:24.240 --> 00:01:29.400
-equals
+é igual a...
 
 33
 00:01:26.159 --> 00:01:31.080
-and a height equals
+e uma altura é igual...
 
 34
 00:01:29.400 --> 00:01:32.880
-and then finish it off
+Então vamos acabar com isso.
 
 35
 00:01:31.080 --> 00:01:34.500
-so what should the width and height be
+Então, qual deve ser a largura e a altura
 
 36
 00:01:32.880 --> 00:01:35.939
-considering that we had three different
+considerando que tínhamos três diferentes
 
 37
 00:01:34.500 --> 00:01:39.000
-images
+imagens,
 
 38
 00:01:35.939 --> 00:01:41.939
-and three different widths and Heights
+e três larguras e alturas diferentes.
 
 39
 00:01:39.000 --> 00:01:45.600
-well actually since 2019 the width and
+Bem, na verdade desde 2019 a largura e
 
 40
 00:01:41.939 --> 00:01:47.520
-height are a ratio they are not related
+altura são uma razão que não estão relacionados
 
 41
 00:01:45.600 --> 00:01:49.920
-to the pixel width and height of the
+para a largura e altura do pixel do
 
 42
 00:01:47.520 --> 00:01:52.200
-source image so you could put any one of
+imagem de origem para que você possa colocar qualquer um dos
 
 43
 00:01:49.920 --> 00:01:54.180
-the three combinations in here so let's
+as três combinações aqui. vamos
 
 44
 00:01:52.200 --> 00:01:56.700
-go ahead and put 500
+vá em frente e coloque 500
 
 45
 00:01:54.180 --> 00:02:01.140
-and 250.
+e 250.
 
 46
 00:01:56.700 --> 00:02:03.840
-or we could just as easily do 50 by 25
+Ou poderíamos facilmente fazer 50 por 25
 
 47
 00:02:01.140 --> 00:02:06.600
-that's still a two to one ratio
+ainda é uma proporção de dois por um.
 
 48
 00:02:03.840 --> 00:02:09.360
-so I'm going to copy this path
+Vou copiar este caminho,
 
 49
 00:02:06.600 --> 00:02:11.160
-and I'll paste it up here and change the
+e eu vou colá-lo aqui, e mudar o
 
 50
 00:02:09.360 --> 00:02:13.940
-word large
+palavra 'grande'
 
 51
 00:02:11.160 --> 00:02:13.940
-to small
+para 'pequeno'
 
 52
 00:02:14.280 --> 00:02:19.680
-and then for the second one
+Para o segundo
 
 53
 00:02:16.680 --> 00:02:22.319
-we'll use medium
+usaremos 'médio'.
 
 54
 00:02:19.680 --> 00:02:24.920
-you can see over here in a very small
+Você pode ver aqui é um muito pequeno
 
 55
 00:02:22.319 --> 00:02:24.920
-preview
+visualizar...
 
 56
 00:02:25.140 --> 00:02:31.560
-let me go ahead and use that other
+Deixe-me ir em frente e usar os valores maiores.
 
 57
 00:02:27.780 --> 00:02:33.540
-there we go see a little bit better
+Lá vamos nós, você pode ver um pouco melhor.
 
 58
 00:02:31.560 --> 00:02:36.780
-so there's this small one
+Então tem esse pequeno,
 
 59
 00:02:33.540 --> 00:02:39.540
-because our browser is narrower than a
+porque nosso navegador é mais estreito que um
 
 60
 00:02:36.780 --> 00:02:42.800
-maximum width of 500 once we go a little
+largura máxima de 500. Assim que formos um pouco
 
 61
 00:02:39.540 --> 00:02:45.180
-bit wider it now jumps to the medium
+um pouco mais largo, ele agora salta para a imagem média.
 
 62
 00:02:42.800 --> 00:02:47.959
-What's Happening Here is it's actually
+O que está acontecendo aqui é que na verdade
 
 63
 00:02:45.180 --> 00:02:51.000
-taking this Source set and it's
+tomando este caminho de conjunto de origem e é
 
 64
 00:02:47.959 --> 00:02:54.900
-replacing this Source down here on line
+substituindo este srcset aqui na linha
 
 65
 00:02:51.000 --> 00:02:58.739
-17. when we get to medium it takes the
+17. Quando chegamos ao meio leva o
 
 66
 00:02:54.900 --> 00:03:01.440
-medium Source set and uses that as the
+srcset médio e usa isso como o
 
 67
 00:02:58.739 --> 00:03:04.019
-path for the image source
+caminho para a fonte da imagem.
 
 68
 00:03:01.440 --> 00:03:07.140
-so here we have the small image the
+Então aqui temos a pequena imagem...
 
 69
 00:03:04.019 --> 00:03:10.560
-medium image and the large image
+a imagem média... e a imagem grande.
 
 70
 00:03:07.140 --> 00:03:13.080
-now it's not scaling with the page but
+Agora não está escalando com a página, mas
 
 71
 00:03:10.560 --> 00:03:15.500
-it is changing based on the width of my
+está mudando com base na largura do meu
 
 72
 00:03:13.080 --> 00:03:15.500
-browser
-
+navegador.

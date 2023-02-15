@@ -1,0 +1,291 @@
+WEBVTT - Spanish
+
+WEBVTT - Español
+
+1
+00:00:00.900 --> 00:00:06.060
+Ahora trabajemos en el HTML de nuestro héroe.
+
+2
+00:00:04.020 --> 00:00:07.560
+imagen. Voy a empezar con un
+
+3
+00:00:06.060 --> 00:00:11.940
+división.
+
+4
+00:00:07.560 --> 00:00:13.620
+Esta división va a tener una clase.
+
+5
+00:00:11.940 --> 00:00:16.920
+y solo voy a inventar la palabra
+
+6
+00:00:13.620 --> 00:00:18.960
+'héroe' porque le parece apropiado.
+
+7
+00:00:16.920 --> 00:00:21.960
+Dentro de eso, vamos a tener un
+
+8
+00:00:18.960 --> 00:00:25.500
+etiqueta de imagen
+
+9
+00:00:21.960 --> 00:00:28.080
+La etiqueta de la imagen va a comenzar.
+
+10
+00:00:25.500 --> 00:00:31.560
+con una fuente
+
+11
+00:00:28.080 --> 00:00:33.239
+La fuente va a tener un conjunto de fuentes
+
+12
+00:00:31.560 --> 00:00:35.520
+atributo.
+
+13
+00:00:33.239 --> 00:00:38.940
+Voy a llenar eso en un segundo. Él
+
+14
+00:00:35.520 --> 00:00:41.660
+también tiene una consulta de medios.
+
+15
+00:00:38.940 --> 00:00:44.280
+Aquí adentro vamos a usar un
+
+dieciséis
+00:00:41.660 --> 00:00:46.200
+anchura máxima.
+
+17
+00:00:44.280 --> 00:00:48.539
+El ancho que usaremos para esto primero
+
+18
+00:00:46.200 --> 00:00:51.120
+fuente es el ancho de nuestro más pequeño
+
+19
+00:00:48.539 --> 00:00:53.660
+imagen que recordarás es
+
+20
+00:00:51.120 --> 00:00:53.660
+500 píxeles
+
+21
+00:00:55.140 --> 00:01:00.539
+La segunda fuente es como la primera.
+
+22
+00:00:57.960 --> 00:01:04.739
+uno excepto que la consulta de medios ahora
+
+23
+00:01:00.539 --> 00:01:07.100
+coincide con el ancho medio de la imagen.
+
+24
+00:01:04.739 --> 00:01:09.180
+Ahora estamos listos para un estándar
+
+25
+00:01:07.100 --> 00:01:12.740
+etiqueta de imagen
+
+26
+00:01:09.180 --> 00:01:12.740
+Las imágenes tienen fuentes.
+
+27
+00:01:12.960 --> 00:01:17.520
+En este caso particular, la fuente es
+
+28
+00:01:15.960 --> 00:01:20.400
+la imagen grande
+
+29
+00:01:17.520 --> 00:01:21.720
+Tiene un alt y lo llamaré
+
+30
+00:01:20.400 --> 00:01:24.240
+héroe.
+
+31
+00:01:21.720 --> 00:01:26.159
+Entonces vamos a tener un ancho
+
+32
+00:01:24.240 --> 00:01:29.400
+es igual...
+
+33
+00:01:26.159 --> 00:01:31.080
+y una altura es igual...
+
+34
+00:01:29.400 --> 00:01:32.880
+Luego lo remataremos.
+
+35
+00:01:31.080 --> 00:01:34.500
+Entonces, ¿cuál debería ser el ancho y la altura?
+
+36
+00:01:32.880 --> 00:01:35.939
+teniendo en cuenta que teníamos tres diferentes
+
+37
+00:01:34.500 --> 00:01:39.000
+imágenes,
+
+38
+00:01:35.939 --> 00:01:41.939
+y tres anchos y alturas diferentes.
+
+39
+00:01:39.000 --> 00:01:45.600
+Bueno, en realidad desde 2019 el ancho y
+
+40
+00:01:41.939 --> 00:01:47.520
+la altura es una razón no están relacionadas
+
+41
+00:01:45.600 --> 00:01:49.920
+al ancho de píxel y la altura de la
+
+42
+00:01:47.520 --> 00:01:52.200
+imagen de origen para que pueda poner cualquiera de
+
+43
+00:01:49.920 --> 00:01:54.180
+las tres combinaciones aquí. Vamos
+
+44
+00:01:52.200 --> 00:01:56.700
+adelante y pon 500
+
+45
+00:01:54.180 --> 00:02:01.140
+y 250.
+
+46
+00:01:56.700 --> 00:02:03.840
+O bien, podríamos hacer fácilmente 50 por 25
+
+47
+00:02:01.140 --> 00:02:06.600
+eso sigue siendo una proporción de dos por uno.
+
+48
+00:02:03.840 --> 00:02:09.360
+Voy a copiar este camino,
+
+49
+00:02:06.600 --> 00:02:11.160
+y lo pegaré aquí, y cambiaré el
+
+50
+00:02:09.360 --> 00:02:13.940
+palabra 'grande'
+
+51
+00:02:11.160 --> 00:02:13.940
+muy pequeño'
+
+52
+00:02:14.280 --> 00:02:19.680
+para el segundo
+
+53
+00:02:16.680 --> 00:02:22.319
+usaremos 'medio'.
+
+54
+00:02:19.680 --> 00:02:24.920
+Se puede ver por aquí es un muy pequeño
+
+55
+00:02:22.319 --> 00:02:24.920
+avance...
+
+56
+00:02:25.140 --> 00:02:31.560
+Déjame seguir adelante y usar los valores más grandes.
+
+57
+00:02:27.780 --> 00:02:33.540
+Ahí vamos, se puede ver un poco mejor.
+
+58
+00:02:31.560 --> 00:02:36.780
+Así que está este pequeño,
+
+59
+00:02:33.540 --> 00:02:39.540
+porque nuestro navegador es más estrecho que un
+
+60
+00:02:36.780 --> 00:02:42.800
+ancho máximo de 500. Una vez que avanzamos un poco
+
+61
+00:02:39.540 --> 00:02:45.180
+un poco más ancho, ahora salta a la imagen media.
+
+62
+00:02:42.800 --> 00:02:47.959
+Lo que está pasando aquí es en realidad
+
+63
+00:02:45.180 --> 00:02:51.000
+tomando esta ruta del conjunto de fuentes y es
+
+64
+00:02:47.959 --> 00:02:54.900
+reemplazando este srcset aquí en línea
+
+sesenta y cinco
+00:02:51.000 --> 00:02:58.739
+17. Cuando llegamos a medio toma el
+
+66
+00:02:54.900 --> 00:03:01.440
+medium srcset y lo usa como el
+
+67
+00:02:58.739 --> 00:03:04.019
+ruta para la fuente de la imagen.
+
+68
+00:03:01.440 --> 00:03:07.140
+Así que aquí tenemos la pequeña imagen...
+
+69
+00:03:04.019 --> 00:03:10.560
+la imagen mediana... y la imagen grande.
+
+70
+00:03:07.140 --> 00:03:13.080
+Ahora no está escalando con la página, pero
+
+71
+00:03:10.560 --> 00:03:15.500
+está cambiando según el ancho de mi
+
+72
+00:03:13.080 --> 00:03:15.500
+navegador.

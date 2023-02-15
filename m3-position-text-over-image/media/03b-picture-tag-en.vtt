@@ -1,0 +1,290 @@
+WEBVTT - English
+
+1
+00:00:00.900 --> 00:00:06.060
+Now let's work on the HTML for our hero
+
+2
+00:00:04.020 --> 00:00:07.560
+image. I'm going to lead off with a
+
+3
+00:00:06.060 --> 00:00:11.940
+division.
+
+4
+00:00:07.560 --> 00:00:13.620
+This division is going to have a class
+
+5
+00:00:11.940 --> 00:00:16.920
+and I'm just going to make up the word
+
+6
+00:00:13.620 --> 00:00:18.960
+'hero' because it seems appropriate.
+
+7
+00:00:16.920 --> 00:00:21.960
+Inside that, we're going to have a
+
+8
+00:00:18.960 --> 00:00:25.500
+picture tag.
+
+9
+00:00:21.960 --> 00:00:28.080
+The picture tag is going to begin
+
+10
+00:00:25.500 --> 00:00:31.560
+with a source.
+
+11
+00:00:28.080 --> 00:00:33.239
+The source is going to have a source set
+
+12
+00:00:31.560 --> 00:00:35.520
+attribute.
+
+13
+00:00:33.239 --> 00:00:38.940
+I'll fill that out in a second. It
+
+14
+00:00:35.520 --> 00:00:41.660
+also has a media query.
+
+15
+00:00:38.940 --> 00:00:44.280
+Inside here we're going to use a
+
+16
+00:00:41.660 --> 00:00:46.200
+max-width.
+
+17
+00:00:44.280 --> 00:00:48.539
+The width we'll use for this first
+
+18
+00:00:46.200 --> 00:00:51.120
+source is the width of our smallest
+
+19
+00:00:48.539 --> 00:00:53.660
+image which you'll you will remember is
+
+20
+00:00:51.120 --> 00:00:53.660
+500 pixels.
+
+21
+00:00:55.140 --> 00:01:00.539
+The second source is just like the first
+
+22
+00:00:57.960 --> 00:01:04.739
+one except that the media query now
+
+23
+00:01:00.539 --> 00:01:07.100
+matches the medium image width.
+
+24
+00:01:04.739 --> 00:01:09.180
+Now we're ready for a standard
+
+25
+00:01:07.100 --> 00:01:12.740
+image tag.
+
+26
+00:01:09.180 --> 00:01:12.740
+Images have sources.
+
+27
+00:01:12.960 --> 00:01:17.520
+In this particular case, the source is 
+
+28
+00:01:15.960 --> 00:01:20.400
+the large image.
+
+29
+00:01:17.520 --> 00:01:21.720
+It has an alt and I'll just call this
+
+30
+00:01:20.400 --> 00:01:24.240
+hero.
+
+31
+00:01:21.720 --> 00:01:26.159
+Then we're going to have a width
+
+32
+00:01:24.240 --> 00:01:29.400
+equals...
+
+33
+00:01:26.159 --> 00:01:31.080
+and a height equals...
+
+34
+00:01:29.400 --> 00:01:32.880
+Then we'll finish it off.
+
+35
+00:01:31.080 --> 00:01:34.500
+So what should the width and height be
+
+36
+00:01:32.880 --> 00:01:35.939
+considering that we had three different
+
+37
+00:01:34.500 --> 00:01:39.000
+images,
+
+38
+00:01:35.939 --> 00:01:41.939
+and three different widths and heights.
+
+39
+00:01:39.000 --> 00:01:45.600
+Well, actually since 2019 the width and
+
+40
+00:01:41.939 --> 00:01:47.520
+height are a ratio they are not related
+
+41
+00:01:45.600 --> 00:01:49.920
+to the pixel width and height of the
+
+42
+00:01:47.520 --> 00:01:52.200
+source image so you could put any one of
+
+43
+00:01:49.920 --> 00:01:54.180
+the three combinations in here. Let's
+
+44
+00:01:52.200 --> 00:01:56.700
+go ahead and put 500
+
+45
+00:01:54.180 --> 00:02:01.140
+and 250.
+
+46
+00:01:56.700 --> 00:02:03.840
+Or, we could just as easily do 50 by 25
+
+47
+00:02:01.140 --> 00:02:06.600
+that's still a two by one ratio.
+
+48
+00:02:03.840 --> 00:02:09.360
+I'm going to copy this path,
+
+49
+00:02:06.600 --> 00:02:11.160
+and I'll paste it up here, and change the
+
+50
+00:02:09.360 --> 00:02:13.940
+word 'large'
+
+51
+00:02:11.160 --> 00:02:13.940
+to 'small'
+
+52
+00:02:14.280 --> 00:02:19.680
+For the second one
+
+53
+00:02:16.680 --> 00:02:22.319
+we'll use 'medium'.
+
+54
+00:02:19.680 --> 00:02:24.920
+You can see over here is a very small
+
+55
+00:02:22.319 --> 00:02:24.920
+preview...
+
+56
+00:02:25.140 --> 00:02:31.560
+Let me go ahead and use the larger values.
+
+57
+00:02:27.780 --> 00:02:33.540
+There we go, you can see a little bit better.
+
+58
+00:02:31.560 --> 00:02:36.780
+So there's this small one,
+
+59
+00:02:33.540 --> 00:02:39.540
+because our browser is narrower than a
+
+60
+00:02:36.780 --> 00:02:42.800
+maximum width of 500. Once we go a little
+
+61
+00:02:39.540 --> 00:02:45.180
+bit wider, it now jumps to the medium image.
+
+62
+00:02:42.800 --> 00:02:47.959
+What's happening here is it's actually
+
+63
+00:02:45.180 --> 00:02:51.000
+taking this source set path and it's
+
+64
+00:02:47.959 --> 00:02:54.900
+replacing this srcset down here on line
+
+65
+00:02:51.000 --> 00:02:58.739
+17. When we get to medium it takes the
+
+66
+00:02:54.900 --> 00:03:01.440
+medium srcset and uses that as the
+
+67
+00:02:58.739 --> 00:03:04.019
+path for the image source.
+
+68
+00:03:01.440 --> 00:03:07.140
+So here we have the small image... 
+
+69
+00:03:04.019 --> 00:03:10.560
+the medium image... and the large image.
+
+70
+00:03:07.140 --> 00:03:13.080
+Now it's not scaling with the page but
+
+71
+00:03:10.560 --> 00:03:15.500
+it is changing based on the width of my
+
+72
+00:03:13.080 --> 00:03:15.500
+browser.
+
