@@ -2,6 +2,7 @@ a {
   width: 20px;
   height: 20px;
   background-color: brown;
+  display: block;
 }
 p {
   font-size: 10px;
