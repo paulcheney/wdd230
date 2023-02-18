@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+
+<!-- auto hilighting of code -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+
+  <link rel="stylesheet" href="https://byui-cse.github.io/wdd230-ww-course/styles/course.css">
+  <link rel="stylesheet"  href="../styles/paul.css">
+
+  <title>Responsive Images Using srcset</title>
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 230<span id="coursetitle">: Web Frontend Development I</span></h1>
+      <img src="//byui-cse.github.io/wdd230-ww-course/images/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+
+
+  
+  <main class="page">
+  <h2>Responsive Images Using srcset</h2>
+  <h3>Goals</h3>
+  <p>At the end of this learning activity, you will be able to:</p>
+  <ul>
+    <li>Create a <a
+        href="//developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">responsive
+        image</a> with multiple source images</li>
+    <li>Implement <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#art_direction"
+        target="_blank">Art Direction</a> for cropping images</li>
+  </ul>
+  <h3>Overview</h3>
+  <p>We have worked with basic image optimization using image types, sizing, and quality level adjustments. We also want to be aware of the image's appearance in different screen sizes. The work of <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank">responsive image</a> design is to support smaller page weights and to deliver content based upon screen size. The goal is to reduce page weight while being conscious of image clarity and functionality in each screen size and subsequent viewport (the visible area of a web page).</p>
+  <div class="callout info">
+    "Serving desktop-sized images to mobile devices can use 2-4x more data than needed. Instead of
+    a
+    "one-size-fits-all" approach to images, serve different image sizes to different devices. How
+    many
+    image versions should you create? There is no single 'correct' answer to this question.
+    However,
+    it's common to serve 3-5 different sizes of an image. Serving more image sizes is better for
+    performance, but will take up more space on your servers and require writing a tiny bit more
+    HTML." - Web.dev</div>
+
+  <h3>Prepare</h3>
+  <p>The UX (user experience) concept is that users expect to scroll web pages vertically with no need to scroll horizontally to view content. Nor should the user should be required to zoom in or out to see the page content. We cannot expect nor rely upon on a particular viewport width in order for the page to render properly.</p>
+  <figure class="fighalf"><img src="../images/page-weight.webp"><figcaption>Web Page Weight by Type</figcaption></figure>
+  <p>Web pages we build should be light weight and download fast. According to <a href="https://www.hobo-web.co.uk/your-website-design-should-load-in-4-seconds/"
+      target="-blank">hobo</a> the ideal website load time should be under two seconds. Over half of the users who have
+    to wait for three or more seconds are simply going to leave your site. So what can we do to ensure our pages are
+    fast and lightweight?</p>
+
+  <p>Graphics images account for the vast majority of any web page size there are several things web developers can do to speed up load times and reduce data cost. </p>
+    <ul>
+      <li>First, you need to limit the real image width and height to no more than is necessary.</li>
+      <li>Second, choose a save format that works well on the web.</li>
+      <li>Third, compress your image to around 50%.</li>
+    </ul>
+   <p>In this learning activity we'll demonstrate all three working together to create a responsive hero image with art direction.</p>
+
+   <h4>What is Art Direction</h4>
+  <p>Art direction is cropping an image to focus the user's attention on a specific part of the image. When we crop an
+    image for small medium and large screens we will use different framing and different image widths and heights. There
+    are many image editing programs available. Adobe Photoshop is the industry standard but it costs money. <a href='https://pixlr.com/e/"'>Pixlr</a> is an  online image editor that has everything we need and it's free.</p>
+
+<h4>Bad Practices</h4>
+<figure class="fighalf"><img src="../images/scaling-html.webp"><figcaption>Improper resizing using HTML</figcaption></figure>
+  <p>A really bad practice that we see all the time is students use the HTML width and height to scale an image.
+    This displays a massive image and displays it in a tiny frame. When you open the original image in a new browser tab    you can see it's still a massive image therefore it still takes a long time to load. <strong>Please don't ever do this!</strong></p>
+
+    <h4>Process</h4>
+  <p>We're going to build a set of three images, each targeted at a different browser width range. For large desktop
+    computers we will use an image that is 1500 pixels wide. For medium screens we will use an image that is 1000px
+    wide. For small screens we'll use an image that is 500px pixels wide. When were finished, the large image will be 40 kilobytes, the medium image will be 23 kilobytes, and the small image will only be 9 kilobytes. That's a big
+    difference from the 602 kilobytes of the original image.</p>
+
+  <p>We will save all of these images using the webp format and a compression of around 55 percent.</p>
+
+  <p>This is an example of the HTML finished code. Let's review what is happening in this code block. </p>
+  <img src="../images/finishedHTML.webp" alt="html example">
+
+  <p>The picture tag has a reference to three different images, two sources (line 16-17) and the default img tag (line 18). Let's start at the top and work our way down. </p>
+
+  <p><b>Line 16:</b> Is the width of the browser narrower than the max-width of 500px? If so, the srcset path from the line 16
+    replaces the src from the img tag (line 18) and the smallest image is displayed. If the browser is wider than 500px then we  move on to the next test.</p>
+
+  <p><b>Line 17:</b>  Is the width of the browser narrower than the max-width of 1000px? If so, the srcset path from the line 17 replaces the src from the img tag and the middle image is displayed. If the browser is wider than 1000px then we
+    move on to line 18.</p>
+
+  <p><b>Line 18:</b> Since the browser window is wider than 500px and wider than 1000px, will display the third image which
+    is the source of the third test. </p>
+
+  <p>Remember to use max-width for the media query. In this activity, we will use three images but it is possible two have two or many more. In this example below I have six different images as part of the picture tag set.</p>
+  <img src="../images/responsiveExample.webp" alt="responsive image screenshot">
+
+ 
+
+  <h3>ACTIVITY: Creating the Source Images</h3>
+  <ol>
+    <li>If it does not already exist, create a folder named "week03" in your wdd230 directory.</li>
+    <li>Add a new file named "reponsiveimage.html" to that week03 folder.</li>
+    <li>Use EMMET to provide basic HTML structure to the responsiveimage.html file.</li>
+    <li>If it does not already exist, add a "styles" folder to the week03 folder.</li>
+    <li>Add a new file named "reponsiveimage.css" to your styles folder.</li>
+    <li>Remember to link your external reponsiveimage.css file in the document head.</li>
+    <li>If it does not already exist, create a folder named "images" in your week03 directory.</li>
+  </ol>
+<p>Now that ypu have the file/folder structure in place we can get started on the fun stuff.</p>
+
+  <p><a href="https://www.churchofjesuschrist.org/temples/list?lang=eng">Download</a> a large photo of a temple near
+    you.</p>
+  <p>For this assignment we will be using an image ratio of 2 wide x 1 tall (2:1). Therefore an image that was 500px wide should be 250px tall. For the stretch assignment use a different ratio for your responsive image. The ratio you use is not as important as being consistent. Using the same ratio for all images will elliminate <a href="https://www.afasterweb.com/2015/08/29/what-the-jank/" target="_blank">page jank</a> or reflow  problems</p>
+
+  <p>Using an image editor like <a href="https://pixlr.com/e/" target="_blank">Pixlr E</a>, create three different images with three different crops (Art Direction)</p>
+  <p>Remember to save all three images using the WebP format with a quality around 50%.</p>
+  <ul>
+    <li>Create a small version that is 500px wide by 250px tall. Save it as 'hero-small.webp'</li>
+    <li>Create a medium version that is 1000px wide by 500px tall. Save it as 'hero-medium.webp'</li>
+    <li>Finally create a large version that is 1500px wide by 750px tall. Save it as 'hero-large.webp'</li>
+  </ul>
+  <p>Place all these images into your "images" in your 'week03' directory.</p>
+  <p>Note: these are all a 2:1 ratios, this will become important when we get to the HTML.</p>
+  
+
+  <h4>Demonstration</h4>
+  <iframe class="video" src="https://www.youtube.com/embed/bbgbA40ytLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  <h3>ACTIVITY: Building the picture tag</h3>
+  
+  <p>Just below the main tag in your, create an opening and closing division and assign the opening tag a class of 'hero'.</p>
+  <p>Inside the division tag, create an opening and closing picture tag.</p>
+  <p>Inside the picture tag add a source tag with an attribute for srcset='' and media='()'.</p>
+  <p>Set the path for the srcset to the smallest image created earlier.</p>
+  <p>Set the media to max-width: 500px which is the width of the small hero image we created earlier.</p>
+  
+  <details class="html">
+    <summary>Example</summary>
+    <pre><code class="html">
+&lt;div class="hero"&gt;
+  &lt;picture&gt;
+    &lt;source srcset="images/hero-small.webp" media="(max-width: 500px)"&gt;
+  &lt;/picture&gt;
+&lt;/div&gt;
+  </code></pre>
+  </details>
+
+
+
+  <p>Now copy and paste the source line  but change the image to the medium photo and the max-width to 1000px.</p>
+  <p>Neither of these by themselves will show an image on a web page so we need to add a real image with a src and other attributes.</p>
+  <p>Next add an img tag with a src set to the largest photo. </p>
+  <p>Add an alt attribute tag with text description of your photo.</p>
+  <p>Add an width="" and height=""</p>
+  <p>What should the values for width and height be since we  have a 500px by 250px photo and a 1000px by 500px photo and a 1500px by 750px photo? </p>
+  <p>Well it turns out that since 2019, these values do not represent the image width and height but are a ratio used by the browser to calculate the space needed for the photo once it loads. So the reality is that we could use any of them or we could use a width of 2 and a height of 1 and get the same result. </p>
+ 
+  <details class="html">
+    <summary>Example</summary>
+    <pre><code class="html">
+&lt;div class="hero"&gt;
+  &lt;picture&gt;
+    &lt;source srcset="images/hero-small.webp" media="(max-width: 500px)"&gt;
+    &lt;source srcset="images/hero-medium.webp" media="(max-width: 1000px)"&gt;
+    &lt;img src="images/hero-large.webp" alt="table setting" width="2" height="1"&gt;
+  &lt;/picture&gt;
+&lt;/div&gt;
+  </code></pre>
+  </details>
+  <h4>Demonstration</h4>
+  <iframe class="video" src="https://www.youtube.com/embed/8-YLuOSskEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+<h3>ACTIVITY: Add the CSS for the Hero Image</h3>
+<p>In the style sheet for small screens, create a selector for the hero image using the class name 'hero' and its child tag picture.</p>
+<p>Set the width of the <code>.hero picture{}</code> tag to 100%.</p>
+<p>Now create a selector for the .hero that has a child of image.</p>
+<p>Set the <code>.hero img {}</code> width to 100% and most importantly set the height to auto. Failing to include height as auto will cause your image to distort on the page!</p> 
+<details class="css">
+  <summary>Example</summary>
+  <pre><code class="css">x
+.hero picture {
+  width: 100%;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+}
+  </code></pre>
+</details>
+
+<h4>Demonstration</h4>
+<iframe class="video" src="https://www.youtube.com/embed/bi-NzQfB8QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  
+<h3>Submission</h3>
+<ol>
+  <li>Update your course home page with a link to this assignment.</li>
+  <li>Commit and push (upload) your changes to your wdd230 GitHub Pages repository.</li>
+</ol>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</main>
+</body>
+
+</html>
