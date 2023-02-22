@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 
   <link rel="stylesheet" href="https://byui-cse.github.io/wdd230-ww-course/styles/course.css">
-  <link rel="stylesheet"  href="index.css">
+  <link rel="stylesheet"  href="../styles/paul.css">
 
   <title>Responsive Image with Overlay Text</title>
 </head>
@@ -33,235 +33,115 @@
   <h2>Responsive Image with Overlay Text</h2>
   <h3>Lesson Goals</h3>
   <ul>
-    <li>Create a <a
-        href="//developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">responsive
-        image</a> with multiple source images</li>
-    <li>Implement <a
-        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#art_direction"
-        target="_blank">Art Direction</a> for cropping images</li>
-    <li>Add text over the image using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+    <li>Add text over the image using <a href="https://www.w3schools.com/howto/howto_css_image_text.asp"
         target="_blank">CSS Position</a></li>
   </ul>
+
   <h3>Overview</h3>
-  <figure class="fighalf"><img src="images/image-weight.webp"><figcaption>Web Page Weight by Type</figcaption></figure>
-  <p>Web pages we build should be light weight and download fast. According to <a href="https://www.hobo-web.co.uk/your-website-design-should-load-in-4-seconds/"
-      target="-blank">hobo</a> the ideal website load time should be under two seconds. Over half of the users who have
-    to wait for three or more seconds are simply going to leave your site. So what can we do to ensure our pages are
-    fast and lightweight?</p>
-
-  <p>Graphics images account for the vast majority of any web page size there are several things web developers can do to speed up load times and reduce data cost. </p>
-    <ul>
-      <li>First, you need to limit the real image width and height to no more than is necessary.</li>
-      <li>Second, choose a save format that works well on the web.</li>
-      <li>Third, compress your image to around 50%.</li>
-    </ul>
-   <p>In this learning activity we'll demonstrate all three working together to create a responsive hero image with art direction.</p>
-
-   <h4>What is Art Direction</h4>
-  <p>Art direction is cropping an image to focus the user's attention on a specific part of the image. When we crop an
-    image for small medium and large screens we will use different framing and different image widths and heights. There
-    are many image editing programs available. Adobe Photoshop is the industry standard but it costs money. <a href='https://pixlr.com/e/"'>Pixlr</a> is an  online image editor that has everything we need and it's free.</p>
-
-<h4>Bad Practices</h4>
-<figure class="fighalf"><img src="images/image-scale-html.webp"><figcaption>Improper resizing using HTML</figcaption></figure>
-  <p>A really bad practice that we see all the time is where students use the HTML width and height to scale an image.
-    This displays a massive image and displays it in a tiny frame. When you open the original image in a new browser tab    you can see it's still a massive image therefore it still takes a long time to load. Please don't ever do this!</p>
-
-    <h4>Process</h4>
-  <p>We're going to build a set of three images, each targeted at a different browser width range. For large desktop
-    computers we will use an image that is 1500 pixels wide. For medium screens we will use an image that is 1000px
-    wide. For small screens we'll use an image that is 500px pixels wide. When were finished, the large image will be 40 kilobytes, the medium image will be 23 kilobytes, and the small image will only be 9 kilobytes. That's a big
-    difference from the 602 kilobytes of the original image.</p>
-
-  <p>We will save all of these images using the webp format and a compression of around 55 percent.</p>
-
-  <p>This is an example of the HTML finished code. Let's review what is happening in this code block. </p>
-  <img src="images/finishedHTML.webp" alt="html example">
-
-  <p>The picture tag has a reference to three different images, two sources (line 16-17) and the default img tag (line 18). Let's start at the top and work our way down. </p>
-
-  <p><b>Line 16:</b> Is the width of the browser narrower than the max-width of 500px? If so, the srcset path from the line 16
-    replaces the src from the img tag (line 18) and the smallest image is displayed. If the browser is wider than 500px then we  move on to the next test.</p>
-
-  <p><b>Line 17:</b>  Is the width of the browser narrower than the max-width of 1000px? If so, the srcset path from the line 17 replaces the src from the img tag and the middle image is displayed. If the browser is wider than 1000px then we
-    move on to line 18.</p>
-
-  <p><b>Line 18:</b> Since the browser window is wider than 500px and wider than 1000px, will display the third image which
-    is the source of the third test. </p>
-
-  <p>Remember to use max-width for the media query. In this activity, we will use three images but it is possible two have two or many more. In this example below I have six different images as part of the picture tag set.</p>
-  <img src="images/responsiveExample.webp" alt="responsive image screenshot">
-
- 
-
-  <h3>ACTIVITY: Creating the Source Images</h3>
-
-  <p><a href="https://www.churchofjesuschrist.org/temples/list?lang=eng">Download</a> a large photo of a temple near
-    you.</p>
-  <p>For this assignment we will be using an image ratio of 2 wide x 1 tall(2:1). Therefore an image that was 500px wide     should be 250px tall. For the stretch assignment use a different ratio for your responsive image. The ratio you use    is not as important as being consistent. Using the same ratio for all images will elliminate <a href="https://www.afasterweb.com/2015/08/29/what-the-jank/" target="_blank">page jank</a> or reflow  problems</p>
-
-  <p>Using an image editor like <a href="https://pixlr.com/e/" target="_blank">Pixlr E</a>, create a small version that
-    is 500px wide by 250px tall. Save it as 'hero-small.webp'. Create a medium version that is 1000px wide by 500px
-    tall. Save it as 'hero-medium.webp'. Finally create a large version that is 1500px wide by 750px tall. Save it as
-    'hero-large.webp'. Note: these are all a 2:1 ratios, this wil become important when we get to the HTML.</p>
-
-  <p>Remember to save all three images using the WebP format with a quality around 50%.</p>
-
- 
-  <video controls class="demo" poster="media/poster.webp">
-    <source src="media/03a-prepare-images.webm" type="video/webm">
-    <source src="media/03a-prepare-images-hb.mp4" type="video/mp4">
-    <track label="English" kind="subtitles" srclang="en" src="media/03a-prepare-images-en.vtt"  />
-    <track label="Spanish" kind="subtitles" srclang="es" src="media/03a-prepare-images-es.vtt" default />
-    <track label="Portuguese" kind="subtitles" srclang="pt" src="media/03a-prepare-images-pt.vtt"  />
-    <track label="Japanese" kind="subtitles" srclang="ja" src="media/03a-prepare-images-ja.vtt"  />
-  </video>
-
-  <h3>ACTIVITY: Building the picture tag</h3>
-  <p>Just below the main tag, create an opening and closing division and assign the opening tag a class of 'hero'.</p>
-  <p>Inside the division tag, create an opening and closing picture tag.</p>
-  <p>Inside the picture tag add a source tag with an attribute for srcset='' and media='()'.</p>
-  <p>Set the path for the srcset to the smallest image created earlier.</p>
-  <p>Set the media to max-width: 500px which is the width of the small hero image we created earlier.</p>
-  <details class="html">
-    <summary>Example</summary>
-    <pre><code class="html">
-&lt;div class="hero"&gt;
-  &lt;picture&gt;
-    &lt;source srcset="images/hero-small.webp" media="(max-width: 500px)"&gt;
-  &lt;/picture&gt;
-&lt;/div&gt;
-  </code></pre>
-  </details>
-
-
-
-  <p>Now copy and paste the source line  but change the image to the medium photo and the max-width to 1000px.</p>
-  <p>Neither of these by themselves will show an image on a web page so we need to add a real image with a src and other attributes.</p>
-  <p>Next add an img tag with a src set to the largest photo. </p>
-  <p>Add an alt attribute tag with text description of your photo.</p>
-  <p>Add an width="" and height=""</p>
-  <p>What should the values for width and height be since we  have a 500px by 250px photo and a 1000px by 500px photo and a 1500px by 750px photo? </p>
-  <p>Well it turns out that since 2019, these values do not represent the image width and height but are a ratio used by the browser to calculate the space needed for the photo once it loads. So the reality is that we could use any of them or we could use a width of 2 and a height of 1 and get the same result. </p>
- 
-  <details class="html">
-    <summary>Example</summary>
-    <pre><code class="html">
-&lt;div class="hero"&gt;
-  &lt;picture&gt;
-    &lt;source srcset="images/hero-small.webp" media="(max-width: 500px)"&gt;
-    &lt;source srcset="images/hero-medium.webp" media="(max-width: 1000px)"&gt;
-    &lt;img src="images/hero-large.webp" alt="table setting" width="2" height="1"&gt;
-  &lt;/picture&gt;
-&lt;/div&gt;
-  </code></pre>
-  </details>
-  <h3></h3>
-  <video controls class="demo" poster="media/poster.webp">
-    <source src="media/03b-picture-tag.webm" type="video/webm">
-    <source src="media/03b-picture-tag-hb.mp4" type="video/mp4">
-    <track label="English" kind="subtitles" srclang="en" src="media/03b-picture-tag-en.vtt"  />
-    <track label="Spanish" kind="subtitles" srclang="es" src="media/03b-picture-tag-es.vtt" default />
-    <track label="Portuguese" kind="subtitles" srclang="pt" src="media/03b-picture-tag-pt.vtt"  />
-    <track label="Japanese" kind="subtitles" srclang="ja" src="media/03b-picture-tag-ja.vtt"  />
-  </video>
-
-
-<h3>ACTIVITY: Add the CSS for the Hero Image</h3>
-<p>In the style sheet for small screens, create a selector for the hero image using the class name 'hero' and its child tag picture.</p>
-<p>Set the width of the <code>.hero picture{}</code> tag to 100%.</p>
-<p>Now create a selector for the .hero that has a child of image.</p>
-<p>Set the <code>.hero img {}</code> width to 100% and most importantly set the height to auto. Failing to include height as auto will cause your image to distort on the page!</p> 
-<details class="css">
-  <summary>Example</summary>
-  <pre><code class="css">
-.hero picture {
-  width: 100%;
-}
-.hero img {
-  width: 100%;
-  height: auto;
-}
-  </code></pre>
-</details>
-<video controls class="demo" poster="media/poster.webp">
-  <source src="media/03c-hero-css.webm" type="video/webm">
-  <source src="media/03c-hero-css-hb.mp4" type="video/mp4">
-  <track label="English" kind="subtitles" srclang="en" src="media/03c-hero-css.vtt" default />
-</video>
+  <p>As shown in the examples below from Mastercard and Lewis State University, there are times when you want to add live text or even clickable buttons over an image.</p>
+  <img src="../images/text-overlay-ex.webp" alt="text overlay" width="950" height="233">
+  <p>This can be easily done using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">CSS positioning</a>. This same technique can be used over a hero video clip.</p>
 
 <h3>ACTIVITY: Overlay text on the image</h3>
-<p>What we have so far is great but often we will see text over an image inviting users to take action or describing the photo or company.</p>
-<p>Lets return to the HTML and just below the picture tag but inside the hero division, add a span tag with some text.</p>
+<p>For this activity to work, you need to create a parent tag with two children. For this example, lets use a division tag as the parent element. Then inside that we will add an image as the first child and a span as the second child. </p>
 
-<pre><code class="html">&lt;span&gt;Emerald Eve Event Center&lt;/span&gt;</code></pre>
-
-
-<p>Now we will return to the CSS and add a selector for the text using <code>.hero span {}</code>.</p>
-<p>You can set the color, size, padding for your text as well as a transparent background if you like. Remember that it needs to be legible.</p>
-<details class="html">
+<details>
   <summary>Example</summary>
-  <pre><code class="css">
+  <pre><code>
+&lt;div class=&quot;hero&quot;&gt;<br>
+  &lt;img src=&quot;images/riverwalk.webp&quot; alt=&quot;riverwalk&quot; width=&quot;960&quot; height=&quot;384&quot;&gt;<br>
+  &lt;span&gt;Downtown River Walk&lt;/span&gt;<br>
+&lt;/div&gt;
+</code></pre>
+</details>
+<p>Yes, it's really that easy.</p>
+
+<p>Now it's time for the CSS. We need rules for the parent element and rules for each of the two children elements. Based on using a class name of 'hero' you should start with the following css.</p>
+
+<details>
+  <summary>Example</summary>
+  <pre><code>
+.hero {
+}
 .hero span {
-  color: deeppink;
-  background-color: rgba(0,0,0,0.5);
-  padding: 1rem;
+}
+.hero img {
 }
   </code></pre>
 </details>
+
 <p>Currently the text is displayed immediatly below the photo. Lets fix that problem next.</p>
-<p>Add a new CSS rule set for <code>.hero {}</code> and set the position to relative.</p>
-<p>This allows us to  set the position of the <code>.hero span{}</code> to absolute.</p>
-<p>Set the left to 0 and the right to 0</p>
-<p>Then you decide whether to set the top to 0 or the bottom to 0.</p>
-<details class="css">
+<p>The parent division element needs to have its position set to relative.</p>
+<p>This allows us to set the position of the span child to absolute. For now, set the bottom to 0 and the left to 0.</p>
+<p>If you're following along, you will now see the text over the bottom edge of the photo.</p>
+<img src="../images/text-below.webp">
+
+<details>
   <summary>Example</summary>
-  <pre><code class="css">
-.hero span {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  <pre><code>
+  .hero {
+    position: relative; 
+  }
+  .hero img {
+  }
+  .hero span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  </code></pre>
+</details>
+
+<p>An image should be displayed with the width at 100% of it's parent tag and the height should be set to auto. This makes the image scale as the page changes width for different devices.</p>
+<details>
+  <summary>Example</summary>
+  <pre><code>
+.hero img {
+  width: 100%;
+  height: auto;   
 }
   </code></pre>
 </details>
 
-<p>If you chose top, it should be lining up perfectly with the top on the image. However, if you chose bottom, then you may see a gap between the bottom of the color and the photo. Ypu can solve this by adding <code>display: block;</code> the existing <code>.hero img {}</code> selector.</p>
-<img src="images/alignmentProblem.webp" alt="gap">
+<p>There is another problem we need to solve but in order to see it we need to add a border around out span tag like this.</p>
+<pre><code >border: dashed red 1px;</code></pre>
+<p>With the border added we can see that the dashed line is hanging over the bottom of the image. This is because by default, an image is an inline tag.</p>
+<img src="../images/display-block.webp" alt="Display Block" width="404" height="52">
+  
+<p>We can solve this problem by changing the img to display as a block. Now that we have solved that problem, we can remove the border.</p>
 
-<video controls class="demo" poster="media/poster.webp">
-  <source src="media/03d-overlay-text.webm" type="video/webm">
-  <source src="media/03d-overlay-text-hb.mp4" type="video/mp4">
-  <track label="English" kind="subtitles" srclang="en" src="media/03d-overlay-text.vtt" default />
-</video>
+<p>Next we will add a transparenet white background behind the text using rgba() like this.</p>
+<pre><code>background-color: rgba(255,255,255,0.5);</code></pre>
+
+<p>If you explore the position tag, you will see bottom and left as well as right and top. Imagine how you could use these numbers to move this tet anywhere on the image.</p>
+
+<h3>Demonstration</h3>
+<iframe class="video" src="https://www.youtube.com/embed/9Gm9sxaAKxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 
-
-
-
-
-<h3>Practice Challenge</h3>
-<p>Using this CodePen, see if you can display the text over the image as show.</p>
-<div class="challenge">
-<img src="images/challenge.webp" alt="challenge">
-<p class="codepen" data-height="600" data-default-tab="css,result" data-slug-hash="YzjMoMy" data-preview="true" data-editable="true" data-user="paulcheney" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<h3>Challenge</h3>
+<p>See if you can get the text element in the codepen to look like it does in this photo.</p>
+<img src="../images/challenge.webp" alt="challenge" width="950" height="349">
+<p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="YzjMoMy" data-preview="true" data-editable="true" data-user="paulcheney" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/paulcheney/pen/YzjMoMy">
   Positioning Text Over Image</a> by Paul Cheney (<a href="https://codepen.io/paulcheney">@paulcheney</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-</div>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+
+
+
+
+
   
   
 
-  
-<h3>Stretch Assignment</h3>
-<ol>
-<li>Add a responsive image to the home page of your portfolio.</li>
-<li>Use an image ratio of 16x9</li>
-<li>Position the text in the center of the image.</li>
-</ol>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
 </main>

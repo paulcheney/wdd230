@@ -57,10 +57,13 @@
   <h3>Prepare</h3>
   <p>The UX (user experience) concept is that users expect to scroll web pages vertically with no need to scroll horizontally to view content. Nor should the user should be required to zoom in or out to see the page content. We cannot expect nor rely upon on a particular viewport width in order for the page to render properly.</p>
   <figure class="fighalf"><img src="../images/page-weight.webp"><figcaption>Web Page Weight by Type</figcaption></figure>
-  <p>Web pages we build should be light weight and download fast. According to <a href="https://www.hobo-web.co.uk/your-website-design-should-load-in-4-seconds/"
-      target="-blank">hobo</a> the ideal website load time should be under two seconds. Over half of the users who have
-    to wait for three or more seconds are simply going to leave your site. So what can we do to ensure our pages are
-    fast and lightweight?</p>
+  <p>Web pages we build should be light weight and download fast. Kristen from <a href="https://blog.hubspot.com/marketing/page-load-time-conversion-rates"
+      target="-blank">HubSpot</a> lists several statistics you should know as a professionsl web developer</p>
+      <ul>
+        <li>A good load web page load time is 0-4 seconds.🥰</li>
+        <li>The typical mobile web page takes 15.3 seconds to load.😜</li>
+        <li>If you are selling, keep your page load time under 2 seconds.👍</li>
+      </ul>
 
   <p>Graphics images account for the vast majority of any web page size there are several things web developers can do to speed up load times and reduce data cost. </p>
     <ul>
@@ -78,7 +81,7 @@
 <h4>Bad Practices</h4>
 <figure class="fighalf"><img src="../images/scaling-html.webp"><figcaption>Improper resizing using HTML</figcaption></figure>
   <p>A really bad practice that we see all the time is students use the HTML width and height to scale an image.
-    This displays a massive image and displays it in a tiny frame. When you open the original image in a new browser tab    you can see it's still a massive image therefore it still takes a long time to load. <strong>Please don't ever do this!</strong></p>
+    This displays a massive image and squishes it in a tiny space. When you open the  image in a new browser tab    you can see it's still a massive image therefore it still takes a long time to load. <strong>Please don't ever do this!</strong></p>
 
     <h4>Process</h4>
   <p>We're going to build a set of three images, each targeted at a different browser width range. For large desktop
@@ -91,7 +94,7 @@
   <p>This is an example of the HTML finished code. Let's review what is happening in this code block. </p>
   <img src="../images/finishedHTML.webp" alt="html example">
 
-  <p>The picture tag has a reference to three different images, two sources (line 16-17) and the default img tag (line 18). Let's start at the top and work our way down. </p>
+  <p>The picture tag (line 15 and 20) has a reference to three different images, two sources on line 16-17 and the default img tag on line 18. Let's start at the top and work our way down. </p>
 
   <p><b>Line 16:</b> Is the width of the browser narrower than the max-width of 500px? If so, the srcset path from the line 16
     replaces the src from the img tag (line 18) and the smallest image is displayed. If the browser is wider than 500px then we  move on to the next test.</p>
@@ -117,9 +120,9 @@
     <li>Remember to link your external reponsiveimage.css file in the document head.</li>
     <li>If it does not already exist, create a folder named "images" in your week03 directory.</li>
   </ol>
-<p>Now that ypu have the file/folder structure in place we can get started on the fun stuff.</p>
+<p>Now that you have the file/folder structure in place we can get started on the fun stuff.</p>
 
-  <p><a href="https://www.churchofjesuschrist.org/temples/list?lang=eng">Download</a> a large photo of a temple near
+  <p><a href="https://www.churchofjesuschrist.org/temples/list?lang=eng" target="_blank">Download</a> a large photo of a temple near
     you.</p>
   <p>For this assignment we will be using an image ratio of 2 wide x 1 tall (2:1). Therefore an image that was 500px wide should be 250px tall. For the stretch assignment use a different ratio for your responsive image. The ratio you use is not as important as being consistent. Using the same ratio for all images will elliminate <a href="https://www.afasterweb.com/2015/08/29/what-the-jank/" target="_blank">page jank</a> or reflow  problems</p>
 
@@ -145,7 +148,7 @@
   <p>Set the path for the srcset to the smallest image created earlier.</p>
   <p>Set the media to max-width: 500px which is the width of the small hero image we created earlier.</p>
   
-  <details class="html">
+  <details>
     <summary>Example</summary>
     <pre><code class="html">
 &lt;div class="hero"&gt;
@@ -164,9 +167,9 @@
   <p>Add an alt attribute tag with text description of your photo.</p>
   <p>Add an width="" and height=""</p>
   <p>What should the values for width and height be since we  have a 500px by 250px photo and a 1000px by 500px photo and a 1500px by 750px photo? </p>
-  <p>Well it turns out that since 2019, these values do not represent the image width and height but are a ratio used by the browser to calculate the space needed for the photo once it loads. So the reality is that we could use any of them or we could use a width of 2 and a height of 1 and get the same result. </p>
+  <p>Well it turns out that since 2019, these values do not need to be the actual image width and height but are a ratio used by the browser to calculate the space needed for the photo once it loads. So the we could use any of them or we could use a width of 2 and a height of 1 and get the same result. </p>
  
-  <details class="html">
+  <details>
     <summary>Example</summary>
     <pre><code class="html">
 &lt;div class="hero"&gt;
@@ -188,9 +191,9 @@
 <p>Set the width of the <code>.hero picture{}</code> tag to 100%.</p>
 <p>Now create a selector for the .hero that has a child of image.</p>
 <p>Set the <code>.hero img {}</code> width to 100% and most importantly set the height to auto. Failing to include height as auto will cause your image to distort on the page!</p> 
-<details class="css">
+<details>
   <summary>Example</summary>
-  <pre><code class="css">x
+  <pre><code class="css">
 .hero picture {
   width: 100%;
 }
