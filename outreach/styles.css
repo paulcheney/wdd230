@@ -1,0 +1,15 @@
+.outreachdue {
+  background-color: #eee;
+  font-size: 1rem;
+  padding: 1rem;
+  border: deeppink solid 1px;
+  border-radius: 20px;
+}
+.outreachdue span {
+  font-weight: bold;
+}
+.outreachdue a {
+  color: black;
+}
+
+#endClass, #registerDeadline {font-weight: bold;}
