@@ -1,15 +1,97 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 140%;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 1rem 8px;
+}
+h1 {
+  font-weight: 100;
+  font-size: 2.5rem;
+  color:#666;
+  margin: 1rem 8px;
+  line-height: 3rem;;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  background-color: #006eb6;
+  padding: 1rem;
+  margin: 1rem 8px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 1rem 8px;
+}
+
+a {color:#006eb6;}
+
+li {
+  margin-bottom: .6rem;
+}
+#WeekLinks {
+  display: flex;
+  background-color: #eee;
+  padding: 0 1rem;
+  margin: 1rem 8px;
+}
+
+#WeekLinks a {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 1rem .5rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+#WeekLinks a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.pop {
+  background-color: #c9c8ec;
+  padding: 1rem;
+  box-shadow: 0 0 10px #aaa;
+  border-radius: 10px;
+  margin: 1rem 8px;
+}
+
 .outreachdue {
   background-color: #eee;
   font-size: 1rem;
-  padding: 1rem;
-  border: deeppink solid 1px;
-  border-radius: 20px;
+  padding: 0 1rem;
+  margin: 1rem 8px;
+  border: #3174b1 solid 1px;
+  border-radius: 10px;
 }
 .outreachdue span {
   font-weight: bold;
 }
 .outreachdue a {
   color: black;
+}
+
+.problem, .risk,.good {
+  padding: .5rem 1rem;
+  margin: 1rem 8px;
+  border-radius: 4px;
+}
+.problem {
+  background-color: #f8cac6;
+}
+.risk {
+  background-color: #fbeeb8;
+}
+.good {
+  background-color: #c8ecd4;
 }
 
 #endClass, #registerDeadline {font-weight: bold;}
