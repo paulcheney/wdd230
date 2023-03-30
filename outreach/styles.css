@@ -3,6 +3,7 @@ body {
   color: #333;
   line-height: 140%;
   font-weight: 300;
+  font-style: normal;
 }
 
 p {
@@ -20,9 +21,10 @@ h2 {
   font-weight: 700;
   font-size: 2rem;
   color: white;
-  background-color: #006eb6;
+  background: rgb(0,110,182);
+  background: linear-gradient(90deg, #005083 0%, #1490e2 70%);
   padding: 1rem;
-  margin: 1rem 8px;
+  margin: 5rem 8px 1rem 8px;
 }
 h3 {
   font-weight: 700;
@@ -73,19 +75,24 @@ li {
   border-radius: 10px;
 }
 .outreachdue span {
-  font-weight: bold;
+  font-weight: 700;
 }
 .outreachdue a {
   color: black;
 }
 
-.problem, .risk,.good {
+.problem, .risk, .good {
   padding: .5rem 1rem;
   margin: 1rem 8px;
   border-radius: 4px;
 }
 .problem {
   background-color: #f8cac6;
+}
+.problem section {
+  font-style: italic; 
+  background-color: rgba(255,255,255,0.2);
+  padding: .5rem .3rem;
 }
 .risk {
   background-color: #fbeeb8;
@@ -94,4 +101,4 @@ li {
   background-color: #c8ecd4;
 }
 
-#endClass, #registerDeadline {font-weight: bold;}
+#endClass, #registerDeadline, #dropDeadline {font-weight: 700;}

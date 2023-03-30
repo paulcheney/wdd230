@@ -31,6 +31,7 @@ return `${m} ${d}, ${y}`
 document.querySelector('#endClass').innerHTML = readableDate(43)
 
 document.querySelector('#registerDeadline').innerHTML = readableDate(7)
+document.querySelector('#dropDeadline').innerHTML = readableDate(7)
 
 document.querySelector('#week00').innerHTML = readableDate(0)
 
