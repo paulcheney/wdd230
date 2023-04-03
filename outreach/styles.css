@@ -85,9 +85,11 @@ li {
   padding: .5rem 1rem;
   margin: 1rem 8px;
   border-radius: 4px;
+  border-left: solid 3px grey
 }
 .problem {
   background-color: #f8cac6;
+  border-color: #f68076;
 }
 .problem section {
   font-style: italic; 
@@ -96,9 +98,11 @@ li {
 }
 .risk {
   background-color: #fbeeb8;
+  border-color: #fbde65;
 }
 .good {
   background-color: #c8ecd4;
+  border-color: #68d18b;
 }
 
 #endClass, #registerDeadline, #dropDeadline {font-weight: 700;}
