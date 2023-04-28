@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mali', cursive;
+  font-weight: 200;
+}
+
+/* mobile **************************/
+header {
+	background-color: #cedbcd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: #154e13;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: .5rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: rgba(0,0,0,0.3)
+}
+
+.active {
+	background-color: #2d9a28;
+}
+/*========================================================*/
+main {padding: 1rem;}
+main h2 {
+  padding: 1rem 1rem 0 1rem;
+  border-bottom: dashed 1px rgba(0,0,0,0.5);
+}
+main section {
+  padding: 1rem 8px;
+}
+main ul {
+  list-style-position: inside;
+}
+
+
+
+
+/*========================================================*/
+footer {padding: 1rem;}
