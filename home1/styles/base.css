@@ -73,4 +73,7 @@ main ul {
 
 
 /*========================================================*/
-footer {padding: 1rem;}
+footer {
+  padding: 1rem;
+  text-align: center;
+}
