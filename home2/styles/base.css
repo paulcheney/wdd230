@@ -65,12 +65,11 @@ nav li a {
 }
 
 nav a:hover {
-	background-color: rgba(0,0,0,0.3)
+	background-color: rgba(0,0,0,0.3);
 }
 
 .active {
-	background-color: ##33AE2D;
-	color: #000;
+	background-color: rgba(0,0,0,0.2);
 }
 
 /* dark mode */
