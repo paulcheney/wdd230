@@ -41,7 +41,8 @@ nav a:hover {
 }
 
 .active {
-	background-color: #2d9a28;
+	background-color: ##33AE2D;
+	color: #000;
 }
 /*========================================================*/
 main {padding: 1rem;}
