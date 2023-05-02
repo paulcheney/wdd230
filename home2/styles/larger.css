@@ -1,7 +1,7 @@
 @media only screen and (min-width: 38rem) {
-  nav ul {
-		display: flex;
-	}
+  button#hamburger {display: none;}
+  nav ul, nav ul.show {display: flex;}
+
 	nav ul li {
 		flex: 1 1 100%;
 	}
