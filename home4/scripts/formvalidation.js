@@ -20,4 +20,4 @@ const rateSlider = document.querySelector('input[type=range]');
 function displayRating() {
   rateDisplay.innerHTML = rateSlider.value;
 }
-rateSlider.addEventListener('input', displayRating)
+rateSlider.addEventListener('change', displayRating)
