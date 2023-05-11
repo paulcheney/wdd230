@@ -1,0 +1,89 @@
+{
+  "weeks": [
+    {
+      "week": "Week 01",
+      "links": [
+        {
+          "title": "Assignment A",
+          "url": "assignment1.html"
+        },
+        {
+          "title": "Assignment B",
+          "url": "assignment2.html"
+        },
+        {
+          "title": "Assignment C",
+          "url": "assignment3.html"
+        }
+      ]
+    },
+    {
+      "week": "Week 02",
+      "links": [
+        {
+          "title": "Assignment A",
+          "url": "assignment1.html"
+        },
+        {
+          "title": "Assignment B",
+          "url": "assignment2.html"
+        },
+        {
+          "title": "Assignment C",
+          "url": "assignment3.html"
+        }
+      ]
+    },
+    {
+      "week": "Week 03",
+      "links": [
+        {
+          "title": "Assignment A",
+          "url": "assignment1.html"
+        },
+        {
+          "title": "Assignment B",
+          "url": "assignment2.html"
+        },
+        {
+          "title": "Assignment C",
+          "url": "assignment3.html"
+        }
+      ]
+    },
+    {
+      "week": "Week 04",
+      "links": [
+        {
+          "title": "Assignment A",
+          "url": "assignment1.html"
+        },
+        {
+          "title": "Assignment B",
+          "url": "assignment2.html"
+        },
+        {
+          "title": "Assignment C",
+          "url": "assignment3.html"
+        }
+      ]
+    },
+    {
+      "week": "Week 05",
+      "links": [
+        {
+          "title": "Assignment A",
+          "url": "assignment1.html"
+        },
+        {
+          "title": "Assignment B",
+          "url": "assignment2.html"
+        },
+        {
+          "title": "Assignment C",
+          "url": "assignment3.html"
+        }
+      ]
+    }
+  ]
+}

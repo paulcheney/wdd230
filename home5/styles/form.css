@@ -1,0 +1,44 @@
+:root {
+  --box-space: .5rem 16px;
+  --validColor: #00F;
+  --errorColor: #F00;
+  --accent-color: deeppink;
+  --rounded: 6px;
+}
+
+/*Form*/
+form label{
+  display: block;
+  margin: var(--box-space);
+}
+form input[type="password"], form input[type="email"]{
+  display: block;
+  border: 1px solid #aaa;
+  border-left-width: 6px;
+  padding: 4px;
+}
+form input[type="range"] {
+  display: block;
+}
+input:required:valid {
+  border-left-color: var(--validColor);
+}
+input:required:invalid {
+  border-left-color: var(--errorColor);
+}
+
+form input[type="submit"] {
+  margin: var(--box-space);
+  background-color: var(--accent-color);
+  border-radius: var(--rounded);
+  border: none;
+  padding: 8px 1rem;
+}
+#feedback {
+  background-color: var(--accent-color);
+  color: white;
+  line-height: 200%;
+  text-align: center;
+  margin: var(--box-space);
+  width:auto;
+}

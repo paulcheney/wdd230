@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Cheney - WDD230 - Web Frontend Development</title>
+  <meta name="description" content="Paul Cheney - WDD230 - course assignment portal">
+  <meta name="author" content="Paul Cheney">
+
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/base.css" rel="stylesheet">
+  <link href="styles/larger.css" rel="stylesheet">
+  <link href="styles/form.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.ico">
+
+  <meta property="og:title" content="WDD 230 - Portal - Paul Cheney">
+  <meta property="og:url" content="https://paulcheney.github.io/wdd230/">
+  <meta property="og:description" content="Block Instructor for WDD230">
+  <meta property="og:image" content="https://paulcheney.github.io/wdd230/images/logo.png">
+
+</head>
+<body>
+  <header>
+    <img src="images/paul.webp" alt="Paul Cheney" width="50" height="64">
+    <h1>Bro Paul Cheney</h1>
+    <img src="images/dark.svg" alt="dark mode" id="darkBtn">
+  </header>
+  <nav>
+    <button id="hamburger"></button>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Site Plan</a></li>
+      <li  class="active"><a href="#">Form</a></li>
+    </ul>
+  </nav>
+  <main>
+<h2>Web Form</h2>
+
+<form action="">
+  <label>Username:<input type="password" name="pass1" required pattern="[a-zA-Z0-9]{8,}"></label>
+  <label>Username:<input type="password" name="pass2" required pattern="[a-zA-Z0-9]{8,}"></label>
+  <div id="feedback"></div>
+  <label>Email:<input type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid byui email address"></label>
+  <label>Page Rating (<span id="rating"></span>):<input type="range" name="rating" min="1" max="10" required></label>
+
+  <input type="submit" value="Send my Review">
+</form>
+
+  </main>
+  <footer>
+    <p>&copy; <span id="year">year</span> Paul Cheney &bull; Utah</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/navigation.js"></script>
+  <script src="scripts/darkMode.js"></script>
+  <script src="scripts/visitcounter.js"></script>
+  <script src="scripts/formvalidation.js"></script>
+</body>
+</html>
