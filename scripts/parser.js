@@ -17,8 +17,8 @@ function parseURL () {
             let linkSite = `https://${inputArray[3]}.github.io/${inputArray[4]}`
             let linkRepo = input
             //console.log(linkRepo)
-            showLinks.innerHTML = `<p>GitHub <a href="${linkRepo}" target="_blank">Repo</a></p>
-            <p>GitHub <a  href="${linkSite}" target="_blank">Site</a></p>`
+            showLinks.innerHTML = `<p><img src="images/repo.png"> GitHub <a href="${linkRepo}" target="_blank">Repo</a></p>
+            <p><img src="images/www.png"> GitHub <a  href="${linkSite}" target="_blank">Site</a></p>`
         } else {
             console.log("Process a Site to a Repo")
             let accountName = inputArray[2].split(".")[0]
