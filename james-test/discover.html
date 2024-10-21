@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Page | Iloilo Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="description"
+        content="Discover page of Iloilo Chamber of Commerce | WDD 231 | Web Frontend Development I | James Phillip De Guzman">
+    <meta name="author" content="James Phillip K. De Guzman">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Discover Page | Iloilo Chamber of Commerce">
+    <meta property="og:description"
+        content="Iloilo Chamber of Commerce is a webpage for local business connecting consumers to the province's top local products and services!">
+    <meta property="og:image" content="https://jamesphillipdeguzman.github.io/wdd231/chamber/images/hero3.webp">
+    <meta property="og:image:alt" content="Emperador Building: Hero image of Iloilo Chamber of Commerce Discover Page">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://jamesphillipdeguzman.github.io/wdd231/chamber/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+
+    <script src="scripts/base.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="nav-links-wrapper full-width">
+            <!-- <nav class="navlinks1">
+                <ul>
+                    <li><a href="https://jamesdeguzman.com/">James</a></li>
+                    <li><a href="#">About</a></li>
+
+                </ul>
+            </nav> -->
+
+
+            <a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/index.html">
+                <img id="icc" src="images/favicon/android-chrome-192x192.png" alt="ICC: Iloilo Chamber of Commerce"
+                    width="40" height="40"></a>
+
+
+
+            <nav class="menuLinks">
+
+                <ul>
+                    <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/index.html"
+                            class="current-menu-item">Home</a></li>
+                    <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/directory.html">Directory</a>
+                    </li>
+                    <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/join.html">Join</a></li>
+                    <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                </ul>
+            </nav>
+            <button id="menu" aria-label="menu"></button>
+
+
+        </div>
+
+        <div class="hero-container">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/discover-iloilo/images-original/iloilo-provincial-capitol.webp"
+                        media="(max-width: 680px)" class="hero-img">
+                    <img src="images/discover-iloilo/images-original/iloilo-provincial-capitol-front.webp" width="1200"
+                        height="350" alt="Seaside: Hero image of Iloilo Chamber of Commerce" loading="lazy"
+                        class="hero-img">
+                </picture>
+
+                <div class="overlay-text">
+                    <h1>Discover Iloilo today!</h1>
+                    <p id="lastVisit">Last Visit Information: </p>
+                    <div class="lastVisitInfo">
+                        <p>Today's Date: <span id="today"></span></p>
+                        <!-- <p>Next Date: <span id="nextDate"></span></p> -->
+                        <p id="numDays"></p>
+                        <!-- <span id="daysleft"></span> -->
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </header>
+    <!-- <aside class="left-sidebar">
+        <h2>Quick Links</h2>
+
+        <ul>
+            <li><a href="https://jamesphillipdeguzman.github.io/wdd231">Course Page</a></li>
+            <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/directory.html">Chamber</a></li>
+            <li><a href="https://byui-cse.github.io/wdd231-ww-course/week01/chamber-site-plan.html">Site
+                    Plan</a>
+            </li>
+        </ul>
+
+
+    </aside> -->
+
+    <hr>
+    <div class="container-discover">
+
+
+
+        <div class="sidebars">
+
+            <button id="showHideBtn">Show/Hide</button>
+
+            <h3>Iloilo Demographics <span class="downpicker" data-index="0"> ▽</span></h3>
+
+            <aside class="sidebar-content">
+
+                <ul>
+
+
+                    <li class="demo">Population: ~2.5 million (2020)</li>
+                    <li class="demo">Age Groups:
+                        <ul>
+                            <li>Children (0-14 years): ~30%</li>
+                            <li>Working Age (15-64 years): ~65%</li>
+                            <li>Elderly (65+ years): ~5%</li>
+                        </ul>
+                    </li>
+
+                    <li class="demo">Gender:
+                        <ul>
+                            <li>Male: ~49%</li>
+                            <li>Female: ~51%</li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="demo">Main Language: Hiligaynon (Ilonggo)</li>
+                    <li class="demo">Religion: Mainly Roman Catholic (about 80%)</li>
+                    <li class="demo">Literacy Rate: ~95%</li>
+                    <li class="demo">Economy: Focus on agriculture, trade, services, and manufacturing.</li>
+
+                </ul>
+
+
+            </aside>
+
+
+
+            <h3>Iloilo City Overview<span class="downpicker" data-index="1"> ▽</span></h3>
+            <aside class="sidebar-content">
+                <h4>Location</h4>
+
+                <ul>
+                    <li class="overview">Southeastern coast of Panay Island, Philippines.</li>
+                    <li class="overview">Classification: 1st class highly urbanized city in the Western Visayas region
+                    </li>
+                </ul>
+
+
+                <h4>Population</h4>
+                <ul>
+                    <li class="overview">City: 457,626 (2020)</li>
+                    <li class="overview">Metropolitan Area: 1,007,945</li>
+                    <li class="overview">Role: Capital of Iloilo Province and regional center for education, healthcare,
+                        tourism, and economy.</li>
+                    <li class="overview">Districts: Includes Villa de Arevalo, Iloilo City Proper, Jaro, La Paz,
+                        Mandurriao,
+                        Molo, and Lapuz.</li>
+                    <li class="overview">Founded: Spanish settlers established Iloilo in 1566.</li>
+
+                </ul>
+
+
+            </aside>
+
+            <h3>History<span class="downpicker" data-index="2"> ▽</span></h3>
+            <aside class="sidebar-content">
+                <h4>History</h4>
+                <ul>
+                    <li class="overview">Historical Significance: Known as "La Muy Leal y Noble Ciudad" (The Most Loyal
+                        and
+                        Noble City) by Spain.</li>
+                    <li class="overview">Served as the last capital of the Spanish Empire in Asia.</li>
+                </ul>
+
+                <h4>Culture and Cuisine</h4>
+                <ul>
+                    <li class="overview">Culinary Recognition: First UNESCO Creative City of Gastronomy in the
+                        Philippines.
+                    </li>
+                    <li class="overview">Famous Dishes: La Paz Batchoy, Kansi, and Pancit Molo.</li>
+                    <li class="overview"> Notable Institutions: Home to Central Philippine University, a prominent
+                        educational institution.</li>
+
+                </ul>
+
+
+
+                <h4>Attractions</h4>
+                <ul>
+                    <li class="overview">Festivals: Famous for the Dinagyang Festival.</li>
+                    <li class="overview">Heritage: Well-preserved heritage houses, churches, museums, and Spanish
+                        colonial
+                        architecture.</li>
+
+                </ul>
+            </aside>
+
+            <h3>Dinagyang Festival<span class="downpicker" data-index="3"> ▽</span></h3>
+            <aside class="sidebar-content">
+
+
+                <h4> Dinagyang Festival</h4>
+                <ul>
+                    <li class="overview">
+                        <ul>
+                            <li>When: Fourth Sunday of January</li>
+                            <li>Description: A vibrant celebration honoring the Santo Niño with street dancing, colorful
+                                costumes, and cultural presentations. It attracts many tourists and is one of the most
+                                famous festivals in the Philippines.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <h3>Paraw Regatta<span class="downpicker" data-index="4"> ▽</span></h3>
+            <aside class="sidebar-content">
+                <h4> Paraw Regatta</h4>
+                <ul>
+                    <li class="overview">
+                        <ul>
+                            <li>When: Third Week of January </li>
+                            <li>Description: Celebrates Iloilo’s maritime heritage with paraw races in the Iloilo
+                                Strait. The festival includes various water sports, fishing competitions, and beach
+                                volleyball, showcasing local culture and traditions.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </aside>
+
+            <h3>Fiesta de la Candelaria<span class="downpicker" data-index="5"> ▽</span></h3>
+            <aside class="sidebar-content">
+                <h4> Fiesta de la Candelaria</h4>
+                <ul>
+                    <li class="overview">
+                        <ul>
+                            <li>When: February 2</li>
+                            <li>Description: A grand fiesta in Jaro commemorating the Feast of the Presentation of Jesus
+                                Christ. This event features a blend of religious pageantry and secular activities,
+                                including beauty pageants and agricultural shows.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+
+            <h3>Bayluhay<span class="downpicker" data-index="6"> ▽</span></h3>
+            <aside class="sidebar-content">
+                <h4> Bayluhay</h4>
+                <ul>
+                    <li class="overview">
+                        <ul>
+                            <li>When: 3rd of January</li>
+                            <li>Description: A relatively new festival celebrating the historical contact between Malay
+                                settlers and the Ati. It features cultural reenactments, street dances, and pageants,
+                                creating a festive atmosphere.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </aside>
+
+            <h3>Binanog Festival<span class="downpicker" data-index="7"> ▽</span></h3>
+            <aside class="sidebar-content">
+                <h4> Binanog Festival </h4>
+                <ul>
+                    <li class="overview">
+                        <ul>
+                            <li>When: January 10-16</li>
+                            <li>Description: Celebrated in Lambunao, this festival showcases the Binanog dance of
+                                the
+                                Panay-Bukidnon community, imitating the movements of hawks. It highlights the
+                                region’s
+                                unique cultural heritage.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </aside>
+
+            <h3>Carabao-Carroza Festival<span class="downpicker" data-index="8"> ▽</span></h3>
+            <aside class="sidebar-content">
+
+                <h4> Carabao-Carroza Festival</h4>
+                <ul>
+                    <li class="overview">
+                        <ul>
+                            <li>When: May 3</li>
+                            <li>Description: This festival honors traditional farming practices with events like the
+                                Carabao-Carroza Parade and races, celebrating the importance of carabaos in the
+                                agricultural history of Pavia.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+
+            <h3>Tinu-om Festival<span class="downpicker" data-index="9"> ▽</span></h3>
+            <aside class="sidebar-content">
+                <h4> Tinu-om Festival </h4>
+                <ul>
+                    <li class="overview">
+                        <ul>
+                            <li>When: September 1-5</li>
+                            <li>Description: Highlights the local chicken dish, tinu-om. The festival features dance
+                                troupes that celebrate the preparation of this traditional dish, which is steamed
+                                with
+                                aromatic ingredients wrapped in banana leaves.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+
+            <h3>Iloilo Chinese New Year<span class="downpicker" data-index="10"> ▽</span></h3>
+            <aside class="sidebar-content">
+                <h4> Iloilo Chinese New Year</h4>
+                <ul>
+                    <li class="overview">
+                        <ul>
+                            <li>When: Various dates</li>
+                            <li>Description: Celebrated by the Chinese-Filipino community, this festival
+                                includes
+                                fireworks, cultural displays, and various activities reflecting the
+                                contributions of
+                                this community to Iloilo's development.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </aside>
+
+        </div>
+
+        <article class="discover-details">
+
+            <h2>12 Places to Visit in Iloilo</h2>
+
+            <h2>1. Santa Barbara Parish Church</h2>
+            <figure>
+                <div class="blurry" data-image-name="image1">
+
+                    <img class="img-discover" src="images/discover-iloilo/images-original/santa-barbara-church.webp"
+                        alt="A photo of Santa Barbara Church in Iloilo" loading="lazy" width="860" height="520">
+                </div>
+
+                <figcaption>The Santa Barbara Parish Church, established in 1760, is renowned for its neoclassical
+                    architecture and historical significance as the "Cradle of Independence" in the Visayas.
+                </figcaption>
+
+            </figure>
+
+            <p>Santa Barbara Parish Church in Iloilo, Philippines, is known as the "Cradle of
+                Independence" in
+                the Visayas, having played a significant role during the Philippine Revolution. Established as
+                an independent parish in 1760, its construction began in 1845 under Father Francisco Aguerria,
+                funded by local taxes and labor. The church, a National Landmark since 1991, features
+                neoclassical architecture and underwent restoration in 2015 to celebrate Philippine Independence
+                Day.</p>
+
+
+            <h2>2. Guimaras Island</h2>
+            <figure>
+                <div class="blurry" data-image-name="image2">
+                    <img class="img-discover" src="images/discover-iloilo/images-original/guimaras.webp"
+                        alt="A photo of Guimaras Island in Iloilo" loading="lazy" width="860" height="520">
+                </div>
+                <figcaption>Known as the "Mango Capital of the Philippines," Guimaras Island is celebrated for
+                    its tropical climate and vibrant agricultural landscape.
+                </figcaption>
+
+            </figure>
+
+            <p>Guimaras is an island province in the Philippines, located in the Western
+                Visayas
+                region, known
+                as the "Mango Capital of the Philippines" due to its significant mango production. Covering
+                an
+                area of 604.57 square kilometers, it features a tropical climate with distinct dry and wet
+                seasons, and its economy is primarily based on agriculture, fishing, and tourism. The
+                province,
+                which became independent from Iloilo in 1992, is popular for its beautiful beaches and the
+                annual Manggahan Festival, celebrating its mango harvest.</p>
+
+
+            <h2>3. Festive Walk Iloilo</h2>
+            <figure>
+                <div class="blurry" data-image-name="image3">
+                    <img class="img-discover" src="images/discover-iloilo/images-original/festive-walk-iloilo.webp"
+                        alt="A photo of Festive Walk in Iloilo" loading="lazy" width="860" height="520">
+                </div>
+                <figcaption>Festive Walk Iloilo, Megaworld's largest lifestyle mall outside Luzon, showcases Ilonggo
+                    culture through its architectural design and diverse shopping experience.
+                </figcaption>
+
+            </figure>
+
+            <p>Festive Walk Iloilo, also known as Festive Walk Mall, is a lifestyle mall
+                developed
+                by Megaworld Lifestyle Malls, located within the Iloilo Business Park in Mandurriao, Iloilo
+                City.
+                Launched in 2018, the three-level mall spans 90,000 square meters and is recognized as
+                Megaworld's
+                largest lifestyle mall outside Luzon, featuring a design that celebrates Ilonggo culture and the
+                arts. The mall has won accolades, including a Highly Commended Award for 'Best Retail
+                Architectural
+                Design' at the 2018 Philippines Property Awards, and offers easy access to surrounding
+                attractions
+                via covered walkways.
+            </p>
+
+
+            <h2>4. Iloilo Museum of Contemporary Art (ILOMOCA)</h2>
+            <figure>
+                <div class="blurry" data-image-name="image4">
+                    <img class="img-discover" src="images/discover-iloilo/images-original/iloilo-museum.webp"
+                        alt="A photo of Iloilo Museum of Contemporary Art (ILOMOCA)" loading="lazy" width="860"
+                        height="520">
+                </div>
+
+                <figcaption>ILOMOCA is the first museum in the Visayas dedicated to modern art, enriching community
+                    life
+                    with exhibitions and outreach programs.
+                </figcaption>
+            </figure>
+
+            <p>The Iloilo Museum of Contemporary Art (ILOMOCA) is the first museum in the
+                Visayas
+                dedicated to modern and contemporary art, aiming to enrich community life in Iloilo through
+                exhibitions and outreach programs. Located in the Casa Emperador Building within the Iloilo
+                Business
+                Park Township, the museum spans approximately 3,000 square meters, featuring five exhibition
+                rooms,
+                a theater facility, and a souvenir shop. Initiated by Megaworld Corporation through the
+                Megaworld
+                Foundation, ILOMOCA seeks to foster inclusive experiences and discussions about art and social
+                life.
+
+            </p>
+
+            <h2>5. Iloilo River Esplanade</h2>
+            <figure>
+                <div class="blurry" data-image-name="image5">
+                    <img class="img-discover" src="images/discover-iloilo/images-original/iloilo-river-esplanade.webp"
+                        alt="A photo of Iloilo River Esplanade" loading="lazy" width="860" height="520">
+                </div>
+                <figcaption>The Iloilo River Esplanade is a scenic 9.29-kilometer park that revitalizes the
+                    waterfront
+                    while promoting public enjoyment and environmental sustainability.
+                </figcaption>
+            </figure>
+
+            <p>The Iloilo River Esplanade is a 9.29-kilometer urban esplanade and linear park
+                along
+                the Iloilo River in Iloilo City, Philippines, stretching from Carpenter’s Bridge to Muelle Loney
+                Bridge. Designed by renowned architect Paulo Alcazaren, it is part of the Iloilo River
+                Rehabilitation Project and serves as a prime example of waterfront revitalization, featuring a
+                peaceful promenade, mangrove forests, and eco-friendly spaces. Since its opening in 2012, the
+                esplanade has become a popular attraction, inspiring similar public infrastructure projects
+                across
+                the country, and is managed by the Iloilo City Government for public enjoyment.
+
+            </p>
+
+
+            <h2>6. Molo Plaza</h2>
+            <figure>
+                <div class="blurry" data-image-name="image6">
+                    <img class="img-discover" src="images/discover-iloilo/images-original/molo-plaza.webp"
+                        alt="A photo of Molo Plaza in Iloilo" loading="lazy" width="860" height="520">
+                </div>
+                <figcaption>Molo Plaza, an urban park established in the 1920s, features statues and monuments that
+                    celebrate the area's rich cultural heritage.
+                </figcaption>
+            </figure>
+
+            <p>Molo Plaza is an urban park and town square located in the Molo district of
+                Iloilo
+                City, Philippines, and is one of the city's six district plazas. Established in the 1920s, the
+                plaza
+                features statues of Greek goddesses and a monument of Maria Clara, and underwent significant
+                rehabilitation in 2022, which included a PHP 20 million restoration and the installation of a
+                new
+                fountain. Surrounded by landmarks like Molo Mansion and St. Anne Parish Church, Molo Plaza has
+                hosted various events, including celebrations for Iloilo City's 75th Charter Day.
+
+            </p>
+
+
+            <h2>7. Molo Mansion</h2>
+            <figure>
+
+                <div class="blurry" data-image-name="image7">
+                    <img class="img-discover" src="images/discover-iloilo/images-original/molo-mansion.webp"
+                        alt="A photo of Molo Mansion in Iloilo" loading="lazy" width="860" height="520">
+                </div>
+                <figcaption>The Molo Mansion, a historic Neoclassical-Art Deco house built in 1926, now houses a
+                    store
+                    that reflects its cultural significance in Iloilo.
+                </figcaption>
+            </figure>
+
+            <p>Molo Mansion, also known as the Yusay-Consing Mansion, is a historic
+                Neoclassical-Art Deco heritage house in Molo, Iloilo City, Philippines, built in 1926.
+                Originally
+                the Lacson-Yusay Ancestral House, it features high ceilings, ornate balustrades, and decorative
+                carvings, making it a prominent landmark across from Molo Plaza and Molo Church. After
+                undergoing
+                restoration in 2014, the mansion now houses a Kultura store, allowing visitors to explore its
+                rich
+                history and cultural significance, reflecting the area's association with influential Filipino
+                leaders and intellectuals.
+
+            </p>
+
+
+            <h2>8. Iloilo Provincial Capitol Casa Real</h2>
+            <figure>
+
+                <div class="blurry">
+                    <img class="img-discover"
+                        src="images/discover-iloilo/images-original/iloilo-provincial-capitol-casa-real.webp"
+                        alt="A photo of Iloilo Provincial Capitol Casa Real" loading="lazy" width="860" height="520">
+
+                </div>
+                <figcaption>The Casa Real de Iloilo, built in 1869, serves as a museum and historic site, showcasing
+                    the
+                    city's rich political and architectural history.
+                </figcaption>
+            </figure>
+
+            <p>The Casa Real de Iloilo, also known as the Old Iloilo Provincial Capitol, is a
+                historical landmark in Iloilo City, Philippines, built in 1869 during the Spanish colonial era
+                and
+                serving as the provincial government seat until 2006. The structure originally featured a
+                one-story
+                stone design, with a second story added in 1873, and underwent a full restoration in 2015 to
+                preserve its architectural integrity. Designated a National Historical Site and known as
+                "Kilometer
+                Zero" of Iloilo, the Casa Real now operates as a museum and tourist attraction, showcasing the
+                city's rich history and cultural heritage.
+
+            </p>
+
+            <h2>9. Iloilo Convention Center (ICON)</h2>
+            <figure>
+
+                <div class="blurry" data-image-name="image9">
+                    <img class="img-discover" src="images/discover-iloilo/images-original/iloilo-convention-center.webp"
+                        alt="A photo of Iloilo Convention Center (ICON)" loading="lazy" width="860" height="520">
+                </div>
+                <figcaption>The Iloilo Convention Center is a modern venue designed to reflect local festivals,
+                    hosting
+                    significant events and enhancing Iloilo's cultural landscape.
+                </figcaption>
+            </figure>
+
+            <p>The Iloilo Convention Center (ICON) is a modern convention facility located in
+                Iloilo Business Park, completed in 2015 on the site of the former Mandurriao Airport. Designed
+                by
+                architect William Coscolluela, its structure reflects the vibrant Dinagyang and Paraw Regatta
+                festivals, featuring a main hall that accommodates 3,700 seats and additional function rooms.
+                Inaugurated by President Benigno Aquino III, the center serves as a significant venue for
+                events,
+                enhancing the cultural landscape of Iloilo City.
+
+
+            </p>
+
+
+            <h2>10. Iloilo International Airport</h2>
+            <figure>
+
+                <div class="blurry" data-image-name="image10">
+                    <img class="img-discover"
+                        src="images/discover-iloilo/images-original/iloilo-international-airport.webp"
+                        alt="A photo of Iloilo International Airport" loading="lazy" width="860" height="520">
+                </div>
+                <figcaption>Iloilo International Airport, opened in 2007, serves as the region's primary gateway,
+                    equipped with modern facilities to meet international standards.
+                </figcaption>
+            </figure>
+            <p>Iloilo International Airport, located in Cabatuan, Iloilo, opened on June 14,
+                2007,
+                replacing the older Mandurriao Airport. It is the first airport in Western Visayas built to
+                international standards and serves as the primary gateway to the region, accommodating over 2.3
+                million passengers in 2023. The airport features a single 2,500-meter runway and modern
+                facilities
+                designed to meet contemporary air travel demands.
+
+
+            </p>
+
+
+            <h2>11. Museo Iloilo</h2>
+            <figure>
+
+                <div class="blurry" data-image-name="image11">
+                    <img class="img-discover" src="images/discover-iloilo/images-original/museo-iloilo.webp"
+                        alt="A photo of Museo Iloilo" loading="lazy" width="860" height="520">
+                </div>
+                <figcaption>Museo Iloilo showcases the region's cultural heritage with diverse exhibits, including
+                    artifacts from the Filipino-Spanish war and ancient pottery.
+                </figcaption>
+            </figure>
+            <p>Museo Iloilo, established in 1971 and designed by architect Sergio Penasales, is
+                the
+                first government-sponsored museum outside Metro Manila, located near the Iloilo Provincial
+                Capitol.
+                It showcases a diverse collection of Iloilo's cultural heritage, including artifacts from the
+                Filipino-Spanish war, ancient pottery, and religious figures, reflecting the region's rich
+                history
+                and strong faith. Notable exhibits also include remnants from a British sunken ship and various
+                war
+                artifacts, highlighting the area's historical significance.
+
+
+            </p>
+
+
+            <h2>12. Old Iloilo Prison Building</h2>
+            <figure>
+
+                <div class="blurry" data-image-name="image12">
+                    <img class="img-discover" src="images/discover-iloilo/images-original/prison-of-iloilo.webp"
+                        alt="A photo of Old Iloilo Prison Building" loading="lazy" width="860" height="520">
+
+                </div>
+                <figcaption>The Old Iloilo Prison Building, repurposed as a museum, now highlights the rich culture
+                    of
+                    Western Visayas while preserving its architectural history.
+                </figcaption>
+            </figure>
+            <p>The Old Iloilo Prison Building, constructed in 1911, served as a prison until
+                2006
+                when operations moved to a new facility in Pototan. In 2018, the building was repurposed as the
+                Western Visayas Regional Museum after renovations funded by the local government and the
+                National
+                Museum. Recognized as a National Cultural Treasure, the museum now features five galleries that
+                showcase the rich culture of Western Visayas, highlighting its architectural and historical
+                significance.
+
+
+            </p>
+
+        </article>
+
+
+
+    </div>
+    <footer class="bottom-details full-width">
+        <div class="left-footer">
+            <!-- <a href="https://byui-cse.github.io/wdd231-ww-course/week01/chamber-site-plan.html">Site Plan</a> -->
+            <p>Iloilo Chamber of Commerce </p>
+            <p>info@icc.com.ph </p>
+            <p>Mandurriao, Iloilo City, 5000</p>
+
+
+        </div>
+
+        <div class="horizontal"></div>
+
+        <div class="socialLinks">
+
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/icons8-facebook-50.png"
+                    alt="Facebook icon 512 x 512" width="30" height="30"></a>
+
+            <a href="https://www.youtube.com/@jamesphillipdeguzman6495" target="_blank"><img
+                    src="images/icons8-youtube-logo-50.png" alt="Youtube icon 512 x 512" width="30" height="30"></a>
+
+            <a href="https://www.linkedin.com/in/jamesphillipdeguzman/" target="_blank"><img
+                    src="images/icons8-linkedin-50.png" alt="LinkedIn icon 512 x 512" width="30" height="30"></a>
+
+
+        </div>
+
+        <div class="horizontal"></div>
+        <div class="right-footer">
+            <p>&copy;<span id="currentyear"></span> | James Phillip De Guzman | WDD 231 Project </p>
+            <p> Iloilo, Philippines </p>
+            <p>Last Update: <span id="lastModified"></span></p>
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>

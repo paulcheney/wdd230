@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage | Iloilo Chamber of Commerce</title>
+    <title>Joinpage | Iloilo Chamber of Commerce</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -15,15 +15,14 @@
         href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <meta name="description"
-        content="Landing page of Iloilo Chamber of Commerce | WDD 231 | Web Frontend Development I | James Phillip De Guzman">
+        content="Join page of Iloilo Chamber of Commerce | WDD 231 | Web Frontend Development I | James Phillip De Guzman">
     <meta name="author" content="James Phillip K. De Guzman">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Homepage | Iloilo Chamber of Commerce">
     <meta property="og:description"
         content="Iloilo Chamber of Commerce is a webpage for local business connecting consumers to the province's top local products and services!">
-    <meta property="og:image"
-        content="https://jamesphillipdeguzman.github.io/wdd231/chamber/images/iloilo-business-park.webp">
-    <meta property="og:image:alt" content="Iloilo Business Park: Hero image of Iloilo Chamber of Commerce Landing Page">
+    <meta property="og:image" content="https://jamesphillipdeguzman.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:image:alt" content="Isla de Gigantes: Hero image of Iloilo Chamber of Commerce Landing Page">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://jamesphillipdeguzman.github.io/wdd231/chamber/">
@@ -36,15 +35,15 @@
     <link rel="stylesheet" href="styles/chamber-small.css">
     <!-- <link rel="stylesheet" href="../styles/course.css"> -->
     <!-- defer is not needed when the type of script is 'module'. -->
-    <script src="scripts/basedate.js" defer></script>
+
     <!-- ** 1) Run script to populate the dropdown for the cities ** -->
-    <!-- <script src="scripts/chamber.js" type="module"></script> -->
+    <script src="scripts/chamber.js" type="module"></script>
     <!-- ** 2) Then, run script to get weather info for Iloilo ** -->
     <script src="scripts/chamber-weather.js" defer></script>
     <!-- ** 3) Finally, load default script to show chamber commerce ** -->
 
-    <script src="scripts/featured-members.js" defer></script>
 
+    <script src="scripts/featured-members.js" defer></script>
 
 </head>
 
@@ -60,20 +59,20 @@
                 </ul>
             </nav> -->
 
+
             <a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/index.html">
                 <img id="icc" src="images/favicon/android-chrome-192x192.png" alt="ICC: Iloilo Chamber of Commerce"
                     width="40" height="40"></a>
 
 
-
             <nav class="menuLinks">
 
                 <ul>
-                    <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/index.html"
-                            class="current-menu-item">Home</a></li>
+                    <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/index.html">Home</a></li>
                     <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/directory.html">Directory</a>
                     </li>
-                    <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/join.html">Join</a></li>
+                    <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/join.html"
+                            class="current-menu-item">Join</a></li>
                     <li><a href="https://jamesphillipdeguzman.github.io/wdd231/chamber/discover.html">Discover</a></li>
                 </ul>
             </nav>
@@ -85,17 +84,19 @@
         <div class="hero-container">
             <div class="hero">
                 <picture>
-                    <source srcset="images/hero3.webp" media="(max-width: 774px)" class="hero-img">
-                    <img src="images/hero4.webp" width="1200" height="250"
-                        alt="Emperador Building: Hero image of Iloilo Chamber of Commerce" class="hero-img">
+                    <source srcset="images/hero.webp" media="(max-width: 680px)" class="hero-img">
+                    <img src="images/hero4.webp" width="1200" height="350"
+                        alt="Seaside: Hero image of Iloilo Chamber of Commerce" loading="lazy" class="hero-img">
                 </picture>
 
                 <div class="overlay-text">
-                    <h1>Welcome to Iloilo Chamber of Commerce</h1>
+                    <h1>Join Us!</h1>
                 </div>
 
             </div>
         </div>
+
+
     </header>
     <div class="container">
 
@@ -112,61 +113,19 @@
 
         </aside> -->
 
-        <hr>
-
-        <article>
-            <h2>Join us!</h2>
-            <section class="keyevent">
-                <h3>Event: Iloilo Chamber of Commerce Conference 2025 </h3>
-
-                <img src="images/chamber-meeting.webp" alt="Chamber meeting for Filipinos" id="chamber-meeting"
-                    width="300" height="200">
-                <p> Date: January 6, 2025 </p>
-                <p>Time: 8:00 AM - 11:00 AM</p>
-                <p>Location: Iloilo Convention Center (ICC) </p>
-                <p>
-                    Description:
-                    Join us for the inaugural Iloilo Chamber of Commerce Conference, where local business leaders will
-                    share best entrepreneurial practices and lead hands-on workshops for new members. This is a
-                    fantastic opportunity to network, learn, and enhance your business skills.
-                </p>
-                <p> Keynote Speaker: </p>
-                <p>Eldred Neal Sollesta</p>
-                <button class="cta-btn"
-                    onclick="location.href='https://jamesphillipdeguzman.github.io/wdd231/chamber/join.html'">JOIN</button>
-            </section>
-            <section class="weather-data">
-                <h3>Weather Forecast</h3>
-
-                <span id="city-name"></span>
-
-
-
-                <figure class="weatherdata-container">
-                    <img src="images/iloilo-business-park.webp" alt="day city view" id="city-image" width="150"
-                        height="75">
-                    <p>The current temperature in Iloilo City is <span id="current-temp"></span>
-                    </p>
-
-                    <figcaption></figcaption>
-                </figure>
-                <img src="images/cloudy.png" alt="cloudy weather icon" id="weather-icon" width="50" height="50">
-            </section>
-
-
-        </article>
 
         <main>
-            <h2>Featured Members</h2>
-            <section class="featured-members">
-                <h3>Gold or Silver Membership</h3>
 
-
-
-                <!-- Populate businesses here dynamically through your javascript code -->
-                <div id="featured-businesses"></div>
-
-            </section>
+            <h2>Thanks for subscribing!</h2>
+            <h2>Have a nice day!</h2>
+            <ul>
+                <li id="fname"></li>
+                <li id="lname"></li>
+                <li id="email-add"></li>
+                <li id="phone"></li>
+                <li id="organization-name"></li>
+                <li id="date-timestamp"></li>
+            </ul>
 
         </main>
 
@@ -177,6 +136,7 @@
             <p>Iloilo Chamber of Commerce </p>
             <p>info@icc.com.ph </p>
             <p>Mandurriao, Iloilo City, 5000</p>
+
 
 
         </div>
