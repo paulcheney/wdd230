@@ -93,21 +93,14 @@
     }
 
 
-    fieldset {
-        display: flex;
-        align-items: self-start;
-        max-width: 80vw;
-        width: 80%;
 
-    }
 
 
 
     /* 
     fieldset label {
         padding-left: 20px;
-    } 
-    */
+    } */
 
 
 
