@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "99.5 STAR F.M. (DYRF)",
+        "address": "COR. RIZAL – IZNART STS., BRGY. MA. CLARA, ILOILO CITY",
+        "contact": "337-9777",
+        "url": "https://onlineradiobox.com/ph/dyrf/",
+        "image": "images/converted/img-99.5-star-fm.webp",
+        "imageAlt": "Small image or logo of 99.5 STAR F.M. (DYRF)",
+        "membershipLevel": "Free",
+        "category": "TELECOMMUNICATIONS",
+        "ok": true
+    },
+    {
+        "id": 2,
+        "name": "MANG INASAL PHILIPPINES, INC.",
+        "address": "G/F ROBINSON’S PLACE, BRGY. OSMEÑA, ILOILO CITY",
+        "contact": "509-7111",
+        "url": "https://www.manginasal.ph/",
+        "image": "images/converted/mang-inasal-3.webp",
+        "imageAlt": "Small image or logo of MANG INASAL PHILIPPINES, INC.",
+        "membershipLevel": "Gold",
+        "category": "RESTAURANTS",
+        "ok": true
+    },
+    {
+        "id": 3,
+        "name": "PANAY ELECTRIC COMPANY, INC.",
+        "address": "#23 MANFRED’S INN BLDG., GEN. LUNA ST., ILOILO CITY",
+        "contact": "337-6177",
+        "url": "https://panayelectric.com/",
+        "image": "images/peco-logo-web.png",
+        "imageAlt": "Small image or logo of PANAY ELECTRIC COMPANY, INC.",
+        "membershipLevel": "Free",
+        "category": "POWER COMPANY",
+        "ok": true
+    },
+    {
+        "id": 4,
+        "name": "PHILIPPINE LONG DISTANCE TELEPHONE COMPANY",
+        "address": "BRGY. MAGSAYSAY, LUNA ST., LAPAZ, ILOILO CITY",
+        "contact": "320-1212",
+        "url": "https://main.pldt.com/",
+        "image": "images/converted/pldt-corpwebsite-navigation-logo.webp",
+        "imageAlt": "Small image or logo of PHILIPPINE LONG DISTANCE TELEPHONE COMPANY",
+        "membershipLevel": "Free",
+        "category": "TELECOMMUNICATIONS",
+        "ok": true
+    },
+    {
+        "id": 5,
+        "name": "MEGAWORLD CORPORATION",
+        "address": "RICHMONDE TOWER, ILOILO BUSINESS PARK, BRGY. AIRPORT MANDURRIAO, ILOILO CITY",
+        "contact": "330-3464 to 65",
+        "url": "https://www.megaworldcorp.com/",
+        "image": "images/megaworld-corporation-logo-1D46332E3F-seeklogo.com.png",
+        "imageAlt": "Small image or logo of MEGAWORLD CORPORATION",
+        "membershipLevel": "Gold",
+        "category": "REAL ESTATE DEVELOPER/DEALER",
+        "ok": true
+    },
+    {
+        "id": 6,
+        "name": "KFC",
+        "address": "SM CITY, DIVERSION ROAD, MANDURRIAO, ILOILO CITY",
+        "contact": "0920-962-3783",
+        "url": "https://www.kfc.com.ph/Location/AboutStoreDetails?Storeid=KFC106",
+        "image": "images/kfc.svg",
+        "imageAlt": "Small image or logo of KFC",
+        "membershipLevel": "Free",
+        "category": "RESTAURANTS",
+        "ok": true
+    },
+    {
+        "id": 7,
+        "name": "JOLLIBEE",
+        "address": "COR. M.H. DEL PILAR ST. – INFANTE AVENUE, MOLO, ILOILO CITY",
+        "contact": "337-3700",
+        "url": "https://jollibee.com.ph/",
+        "image": "images/converted/jollibee.webp",
+        "imageAlt": "Small image or logo of JOLLIBEE",
+        "membershipLevel": "Silver",
+        "category": "RESTAURANTS",
+        "ok": true
+    }
+]
