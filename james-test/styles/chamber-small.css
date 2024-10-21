@@ -663,3 +663,127 @@
 
 
 }
+
+@media (max-width: 616px) {
+
+
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .discover-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        max-width: 100vw;
+        width: 90%;
+    }
+
+    div.container-discover p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    div.container-discover h2 {
+        font-size: 1.8rem;
+
+    }
+
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+        margin: 20px;
+        width: 100%;
+    }
+
+    figure h2 {
+        font-size: 1.2rem;
+    }
+
+    figcaption {
+        text-align: center;
+        font-size: small;
+        width: 100%;
+    }
+
+
+    figure img {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+
+    figure img {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    article {
+        max-width: 90vw;
+        width: 90%;
+    }
+
+    article p {
+        font-family: var(--default-font);
+        text-align: left;
+    }
+
+    main,
+    .container {
+        /* display: block; */
+        margin: 0;
+        padding: 0;
+        max-width: 100vw;
+        width: 100%;
+    }
+
+
+    fieldset {
+        display: flex;
+        align-items: self-start;
+        max-width: 80vw;
+        width: 80%;
+
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 500px;
+        max-width: 80vw;
+        /* margin: 0 auto; */
+    }
+
+    /* 
+    fieldset label {
+        padding-left: 20px;
+    } */
+
+
+
+
+
+
+}
